@@ -16,10 +16,10 @@ Including another URLconf
 # myweb/urls.py
 from django.conf.urls import url, include
 from django.contrib import admin
-from shop import views
+from learning import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^',include('shop.urls')),
-    url(r'^reset/', views.reset_password),
+    url(r'^',include('learning.urls')),
+
 ]
