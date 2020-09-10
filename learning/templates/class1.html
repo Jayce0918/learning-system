@@ -5,7 +5,7 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HTML Course</title>
+    <title>HTML5+CSS3 靜態網頁建置 A-Z</title>
     
     
     <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
@@ -39,7 +39,7 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">鷹架式前端語言系統</a></div>
+          <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
 
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -65,14 +65,15 @@
 
     <div class="intro-section single-cover" id="home-section">
       
-      <div class="slide-1 " style="background-image: url({% static 'images/img_1.jpg' %}");" data-stellar-background-ratio="0.5">
+      <div class="slide-1 " style="background-image: url({% static 'images/img6.jpg' %}");" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
               <div class="row justify-content-center align-items-center text-center">
                 <div class="col-lg-6">
-                  <h1 data-aos="fade-up" data-aos-delay="0">HTML 課程</h1>
-                  <p data-aos="fade-up" data-aos-delay="100">4 Lessons / 12 Week &bullet; 2,193 students &bullet; <a href="#" class="text-white">6 comments</a></p>
+                  <h1 data-aos="fade-up" data-aos-delay="0">HTML5+CSS3 </h1>
+                  <h1 data-aos="fade-up" data-aos-delay="0">靜態網頁建置 A-Z</h1>
+                  <p data-aos="fade-up" data-aos-delay="100">&bullet; 此章節共 2 個小時 / 6 份作業 &bullet; </p>
                 </div>
 
                 
@@ -90,26 +91,59 @@
           <div class="col-lg-8 mb-5">
 
             <div class="mb-5">
-              <h3 class="text-black">課程內容</h3>
-              <p class="mb-4">
-                <strong class="text-black mr-3">您將會學到: </strong> 
-              </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum iure voluptatum provident natus, deleniti alias corporis dolorem architecto eligendi consequatur, veniam ratione qui adipisci, doloremque aspernatur? Debitis, quia, praesentium.</p>
-              <p>Molestias sit temporibus ullam voluptatem quibusdam. Accusamus labore perspiciatis similique veritatis ipsum iure quas. Nulla perspiciatis unde eveniet nihil, nesciunt repellat maxime ab libero minima voluptas dolore repudiandae adipisci. Cumque!</p>
-              <p>Enim harum voluptatem, itaque in illum quas temporibus tempore sit tempora quam atque eveniet, non aspernatur dignissimos aliquid praesentium exercitationem delectus, maxime velit saepe! Qui asperiores iure reprehenderit ad voluptas!</p>
-              <div class="row mb-4">
-                <div class="col-md-6">
-                  <img src="{% static "images/img_1.jpg"%}" alt="Image" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6">
-                  <img src="{% static "images/img_1.jpg"%}" alt="Image" class="img-fluid rounded">
-                </div>
-              </div>
-              <p>Ipsam fuga fugiat vero repudiandae, tenetur a ullam, expedita perspiciatis dolores rem quibusdam numquam dicta sint unde repellat magni recusandae. Id, quibusdam, voluptatum. Amet mollitia ratione, illum animi quia ex?</p>
-              <p>Sint aut repudiandae, in amet nemo. Nobis labore id iure molestias reprehenderit quisquam illo quod cum dolorum aspernatur ut sequi, facere beatae, porro cupiditate magnam laborum laudantium laboriosam ab autem!</p>
+              <h3 class="text-black">課程內容</h3>          
+              <h6 class="text-black">您將會學到:</h6>
+              <details>
+                <summary>HTML5網頁設計建構</summary>
+                <ol>
+                <li>HTML概要</li>
+                <li>編寫HTML文件</li>
+                <li>換行、強調、以及插入圖片與連結</li>
+                <li>表格與表單</li>
+                </ol>
+              </details>
 
-              <p class="mt-4"><a href="#" class="btn btn-primary">Admission</a></p>
+              <details>
+                <summary>CSS3標籤與使用方式</summary>
+                <ol>
+                <li>CSS概要</li>
+                <li>基本屬性與選擇器使用方法</li>
+                <li>設定網頁背景</li>
+                <li>基本版面設計與盒子模型</li>
+                <li>表格與表單樣式</li>
+                </ol>
+              </details>
+
+              <details>
+                <summary>模板製作與客製化人網頁</summary>
+                <ol>
+                <li>下載模板</li>
+                <li>修改個人化設計</li>
+                </ol>
+              </details>
+
+              <details>
+                <summary>使用Heroku雲端上傳個人網站</summary>
+                <ol>
+                <li>建立Heroku App與安裝Heroku CLI</li>
+                <li>建置空白虛擬環境</li>
+                <li>利用PHP檔案將網站部署至Heroku</li>
+                </ol>
+              </details>             
             </div>
+            <div>  
+              <h3 class="text-black">要求</h3>
+              <li>不需要嚴謹的程式背景，願意實作練習</li>
+              <li>有操作Windows電腦的基礎</li>
+              <li>任何想要製成一個網站的主題</li>
+              <li>具備快樂學習的心情</li>                           
+            </div>
+<!-- 留言板開始 -->
+
+
+<!-- 留言板結束 -->
+
+
 
             <div class="pt-5">
               <h3 class="mb-5">留言板</h3>
@@ -183,19 +217,20 @@
 
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="{% static "images/person_1.jpg"%}" alt="Image placeholder">
+                    <img src="{% static "images/leehead.jpg"%}" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
-                    <h3>Jean Doe</h3>
-                    <div class="meta">January 9, 2018 at 2:21pm</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                    <p><a href="#" class="reply">Reply</a></p>
+                    <h3>授課講師:李冠霆</h3>
+                    <div class="meta">September 30, 2020 </div>
+                    <p>建置網頁對於 HTML/CSS 的了解是必要的。</p>
+                    <p>在這堂課程中我們會走過一次網頁從 DOM 結構的標籤、連結、網頁內容等，到使用 CSS 屬性概念並下載模板去做客製化修改，</p>
+                    <p>最後利用Heroku雲端去讓我們的練習網站上線。</p>                    
                   </div>
                 </li>
               </ul>
               <!-- END comment-list -->
               
-              <div class="comment-form-wrap pt-5">
+<!--               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">Leave a comment</h3>
                 <form action="#" class="p-5 bg-light">
                   <div class="form-group">
@@ -220,7 +255,7 @@
                   </div>
 
                 </form>
-              </div>
+              </div> -->
             </div>
 
 
@@ -231,8 +266,14 @@
             <div class="mb-5 text-center border rounded course-instructor">
               <h3 class="mb-5 text-black text-uppercase h6 border-bottom pb-3">課程預覽</h3>
               <div class="mb-4 text-center">                 
-                <h3><iframe width="280" height="315" src="https://www.youtube.com/embed/dD2EISBDjWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h3>
-                <p>Lorem ipsum dolor sit amet sectetur adipisicing elit. Ipsa porro expedita libero pariatur vero eos.</p>
+                <h3><iframe width="100%" height="315" src="https://www.youtube.com/embed/dD2EISBDjWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h3>
+                <p class="mt-4"><a href="/htmlcss/" class="btn btn-primary">進入課程</a></p>
+                <div class="text-left">此課程包含
+                <li>7 小時的隨選影片</li>
+                <li>完整終身存取權</li>
+                <li>透過行動裝置與電視存取</li>
+                <li>上線的個人網站</li>
+                </div>
               </div>
             </div>
 
@@ -368,51 +409,11 @@
       </div>
     </div>
      
-    <footer class="footer-section bg-light">
+    <footer class="footer-section bg-light text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>About OneSchool</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
-          </div>
-
-          <div class="col-md-3 ml-auto">
-            <h3>Links</h3>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Teachers</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <h3>Subscribe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
-            <form action="#" class="footer-subscribe">
-              <div class="d-flex mb-5">
-                <input type="text" class="form-control rounded-0" placeholder="Email">
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-            <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
-            </div>
-          </div>
-          
-        </div>
+        <p>Copyright ©2020 All rights reserved | 國立臺灣科技大學資管系策略資訊系統實驗室</p>
       </div>
-    </footer>
+   </footer>
 
   
     

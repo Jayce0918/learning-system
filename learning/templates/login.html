@@ -39,27 +39,11 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">鷹架式前端語言學習系統</a></div>
+          <div class="site-logo mr-auto w-25"><a href="javascript:history.back()">鷹架式前端語言學習系統 </a></div>
 
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="#home-section" class="nav-link">首頁</a></li>
-                <li><a href="#courses-section" class="nav-link">課程</a></li>
-                <li><a href="#programs-section" class="nav-link">鷹架式學習?</a></li>
-                <li><a href="#me-section" class="nav-link">關於作者</a></li>
-              </ul>
-            </nav>
-          </div>
+          
 
-          <div class="ml-auto w-25">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="#contact-section" class="nav-link"><span>聯絡我</span></a></li>
-              </ul>
-            </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
-          </div>
+  
         </div>
       </div>
       
@@ -72,13 +56,12 @@
           <div class="row align-items-center">
             <div class="col-12">
               <div class="row align-items-center">
-                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500" "row align-items-center">
+                <div class="col-lg-5 ml-auto mr-auto" data-aos="fade-up" data-aos-delay="500" "row align-items-center">
                   <form action="" method="post" class="form-box">
                     {% csrf_token %}
                     <h3 class="h4 text-black mb-4">學員登入</h3>
                     <div class="form-group">
                       <input type="text" name="username" required class="form-control" placeholder="帳號">
-                    </div>
                     <div class="form-group">
                       <input type="password" name="password" required class="form-control" placeholder="密碼">
                     </div>

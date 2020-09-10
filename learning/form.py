@@ -32,3 +32,7 @@ class EditForm(ModelForm):
             "email":"信箱",
             "phone":"手機",
         }
+
+        # 留言板
+
+

@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}"/>
     <link rel="stylesheet" href="{% static "css/aos.css" %}"/> 
     <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <style>
+      #hi{
+        border: solid;
+        border-color: navajowhite;
+        border-width: thick;
+        padding-top: 3%;
+      }
+    </style>
     
 
   </head>
@@ -40,7 +48,7 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">鷹架式前端語言學習系統</a></div>
+          <div class="site-logo mr-auto w-25"><a href="#home-section">鷹架式前端語言學習系統</a></div>
 
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -56,7 +64,7 @@
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="#contact-section" class="nav-link"><span>~聯絡我~</span></a></li>
+                <li class="cta"><a href="#contact-section" class="nav-link"><span>聯絡我</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -69,17 +77,17 @@
     <div class="intro-section" id="home-section">
       
       <div class="slide-1" style="background-image: url({% static "images/hero_1.jpg" %});" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
+        <div class="container ">
+          <div class="row align-items-center ">
             <div class="col-12 " >
-              <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 ">
-                  <h1  data-aos="fade-up" data-aos-delay="100">學員登入</h1>
-                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">學員登入，或是註冊學員加入我們!</p>
-                  <p data-aos="fade-up" data-aos-delay="300" style="padding: 5% 5% 5% 0%"><a href="login"" class="btn btn-primary py-3 px-5 btn-pill">登入</a></p>
-                  <p data-aos="fade-up" data-aos-delay="300" style="padding: 0% 5% 5% 0%"><a href="register" class="btn btn-primary py-3 px-5 btn-pill">成為學員</a></p>
-                  
-
+              <div class="row align-items-center justify-content-center text-center" >
+                <div class="col-lg-6 mb-4 d-flex justify-content-center" id="hi"> 
+                  <div>
+                    <h1 data-aos="fade-up" data-aos-delay="100 ">學員登入</h1>
+                    <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">學員登入，或是註冊學員加入我們!</p>
+                    <p data-aos="fade-up" data-aos-delay="300" style="padding: 5% 5% 5% 0%"><a href="login"" class="btn btn-primary py-3 px-5 btn-pill">登入</a></p>
+                    <p data-aos="fade-up" data-aos-delay="300" style="padding: 0% 5% 5% 0%"><a href="register" class="btn btn-primary py-3 px-5 btn-pill">成為學員</a></p>
+                  </div>
                 </div>
 
                 <!-- <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
@@ -132,10 +140,12 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="coursehtml.html"><img src="{% static "images/img_1.jpg" %}" alt="Image" class="img-fluid"></a>
+                <a href="coursehtml.html"><img src="{% static "images/img6.JPG" %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
-                <span class="course-price">Step1</span>
+                <span class="course-price">適合新手</span>
+                <h2>HTML5+CSS3 </h2>
+                <h2>靜態網頁建置 A-Z</h2>
                 <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
                 <h3>課程預覽</h3>
                 <p><iframe width="280" height="315" src="https://www.youtube.com/embed/dD2EISBDjWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
@@ -145,7 +155,7 @@
                 <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
               </div>
             </div>
-
+<!-- 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
                 <a href="coursecss.html"><img src="{% static "images/img_2.jpg" %}" alt="Image" class="img-fluid"></a>
@@ -160,7 +170,7 @@
                 <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
                 <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
               </div>
-            </div>
+            </div> -->
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
@@ -180,10 +190,12 @@
 
              <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="coursejquery.html"><img src="{% static "images/JQUERY.png" %}" alt="Image" class="img-fluid"></a>
+                <a href="coursejquery.html"><img src="{% static "images/img_6.JPG" %}" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
-                <span class="course-price">Step4</span>
+                <span class="course-price">適合新手</span>
+                <h2>Python Django</h2>
+                <h2>網頁框架初學者課程</h2>
                 <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
                 <h3>課程預覽</h3>
                 <p><iframe width="280" height="315" src="https://www.youtube.com/embed/hMxGhHNOkCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>

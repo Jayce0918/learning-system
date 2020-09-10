@@ -19,7 +19,9 @@ def User_logout(request):
 def coursestart(request):
     return render(request,'coursestart.html')
 def class1(request):
-    return render(request,'class1.html')      
+    return render(request,'class1.html') 
+def htmlcss(request):
+    return render(request,'htmlcss.html')     
 
 def register(request):
   if request.method == 'POST':
@@ -88,3 +90,7 @@ def reset_password(request):
         #update_session_auth_hash(request, form.user)
         return HttpResponseRedirect('/logout/')
     return render(request, 'reset.html',{ 'form':form })
+
+# 留言板
+
+
