@@ -6,6 +6,8 @@ from .form import RegisterForm, EditForm
 from django.contrib.auth.forms import SetPasswordForm
 
 
+
+
 def home(request):
     return render(request,'home.html')
 def register(request):
@@ -20,8 +22,42 @@ def coursestart(request):
     return render(request,'coursestart.html')
 def class1(request):
     return render(request,'class1.html') 
-def htmlcss(request):
-    return render(request,'htmlcss.html')     
+def lesson0(request):
+    return render(request,'lesson0.html')  
+def lesson_1(request):
+    return render(request,'lesson1_1.html')
+def lesson_2(request):
+    return render(request,'lesson1_2.html')
+def lesson_3(request):
+    return render(request,'lesson1_3.html')
+def lesson_4(request):
+    return render(request,'lesson2_1.html')
+def lesson_5(request):
+    return render(request,'lesson2_2.html')
+def lesson_6(request):
+    return render(request,'lesson2_3.html')
+def lesson_7(request):
+    return render(request,'lesson2_4.html')  
+def lesson_8(request):
+    return render(request,'lesson2_5.html')
+def lesson_9(request):
+    return render(request,'lesson3_1.html')
+def lesson_10(request):
+    return render(request,'lesson3_2.html')
+def lesson_11(request):
+    return render(request,'lesson3_3.html')
+def lesson_12(request):
+    return render(request,'lesson3_4.html')
+def lesson_13(request):
+    return render(request,'lesson4_1.html')
+def lesson_14(request):
+    return render(request,'lesson4_2.html')
+def lesson_15(request):
+    return render(request,'lesson4_3.html')
+def lesson_16(request):
+    return render(request,'lesson3_5.html')
+   
+
 
 def register(request):
   if request.method == 'POST':
@@ -92,5 +128,9 @@ def reset_password(request):
     return render(request, 'reset.html',{ 'form':form })
 
 # 留言板
+
+
+#作業牆
+
 
 
