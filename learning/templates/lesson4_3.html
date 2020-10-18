@@ -99,7 +99,7 @@
                 <div class="col-lg-6">
                   <h1 data-aos="fade-up" data-aos-delay="0">第 4 節 : 部署到Heroku</h1>
                   <h1 data-aos="fade-up" data-aos-delay="0">部署至Heroku與期末專案</h1>
-                  <p data-aos="fade-up" data-aos-delay="100">&bullet; 此章節共 1 個小時 / 1 份作業 &bullet; </p>
+                  <p data-aos="fade-up" data-aos-delay="100">&bullet; 此章節共 24 分 34秒 / 1 份作業 &bullet; </p>
                 </div>
               </div>
             </div>
@@ -118,9 +118,7 @@
               
               <div>
               <h2 class="mb-5" >課程影片</h2>
-              <iframe width="60%" height="500" src="https://www.youtube.com/embed/mU6anWqZJcc" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe> 
+              <iframe width="60%" height="500" src="https://www.youtube.com/embed/FsliO3z6c4A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="col-lg-4 pl-lg-5" id="test">
 
                   <div class="mb-5 text-left border rounded course-instructor">
@@ -199,17 +197,19 @@
                   <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRxTMWHQ9Qm9xXH1hrV1BXce1KFfqz4THpxJ8QFpfOF1aCgdE702t6XDyE3W8-IKg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>               </div>
                   <div id="tabs-2">
                    <ol>
-                    <li>HTML的功用在於將內容標記成瀏覽器看得懂的資訊。</li>
-                    <li>必須使用DOCTYPE宣告，設定該文件使用的HTML版本。</li>
-                    <li>HTML文件結構的基本項目是標題、段落、條列式列表等。</li>
-                    <li>進行標記時必須遵守元素朝狀架構的規則。</li>
-                    <li>透過a元素的href屬性，可指定各種不同類型的連結。</li>
-                    <li>設定img元素時，請以alt屬性指定替代文字。</li>
-                    <li>了解相對路徑的概念，是製作網頁的必備能力。</li>
-                    <li>table元素是用來標記網頁表格的元素。</li>
-                    <li>表單(form)是用來讓使用者輸入資料的機制。</li>
-                    <li>設定表單元素時，除了建立操作介面元素外，別忘了設定資料欄位名稱(name屬性)、傳送的資料內容(value屬性)等。</li>
-                    <li>請務必理解每一行網頁原始碼的意義。</li>
+                    <li>將HTML應用程式偽裝成PHP檔案，因為Heroku可以正確識別PHP檔。。</li>
+                    <li>將我們想要放入的專案資料夾移到虛擬環境後，第一個想要呈現的頁面命名為home.html，再創建一個index.php並包含此段程式碼:  <?php include_once("home.html"); ?> 。</li>
+                    <li>cd 虛擬環境名稱，cd為移動至該資料夾的命令。</li>
+                    <li>Scripts\activate，啟動虛擬幻境的命令。</li>
+                    <li>cd 專案資料夾名稱。</li>
+                    <li>git init，建立專案資料庫。</li>
+                    <li>heroku git:remote -專案名稱，連結至Heroku之APP命令。</li>
+                    <li>git add . ，將所有檔案加入。</li>
+                    <li>git commit -am"first commit"，將這次上傳命名為first commit。</li>
+                    <li>git push heroku master，將檔案上傳至Heroku雲端主機。</li>
+                    <li>heroku ps:scale web=1 ，著執行一個web server 的程式之命令。</li>
+                    <li>heroku open ，打開網頁。</li>
+                    <li>請各位同學將完成的專案網址分享到討論區，謝謝大家參與本教程，有任何建議或意見都歡迎下方留言，<br> 希望這次的前端網頁教程有帶給你們實際收穫，祝福各位Coding順利。</li>
                    </ol> 
                   </div>  
             </div>
