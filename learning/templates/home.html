@@ -1,37 +1,46 @@
 <!--shop/templates/home.html-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>網頁設計學習系統</title>
-    {%load static%}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/bootstrap-datepicker.css" %}"/>
-    <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/aos.css" %}"/> 
-    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
-    <style>
-      #hi{
-        border: solid;
-        border-color: navajowhite;
-        border-width: thick;
-        padding-top: 3%;
-      }
-    </style>
-    
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<head>
+  <title>網頁設計學習系統</title>
+  {%load static%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}" />
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" />
+  <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}" />
+  <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" />
+  <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}" />
+  <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}" />
+  <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}" />
+  <link rel="stylesheet" href="{% static "css/bootstrap-datepicker.css" %}" />
+  <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}" />
+  <link rel="stylesheet" href="{% static "css/aos.css" %}" />
+  <link rel="stylesheet" href="{% static "css/style.css" %}" />
+  <style>
+    #hi {
+      border: solid;
+      border-color: navajowhite;
+      border-width: thick;
+      padding-top: 3%;
+    }
+
+    .preview {
+      padding-bottom: 3%;
+      color: white;
+    }
+
   
+  </style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -42,10 +51,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
-    
-  <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
       <div class="container-fluid">
         <div class="d-flex align-items-center">
           <div class="site-logo mr-auto w-25"><a href="#home-section">網頁設計學習系統</a></div>
@@ -56,36 +65,43 @@
                 <li><a href="#home-section" class="nav-link">首頁</a></li>
                 <li><a href="#courses-section" class="nav-link">課程預覽</a></li>
                 <li><a href="#programs-section" class="nav-link">鷹架式數位學習</a></li>
+
+
+
               </ul>
             </nav>
           </div>
 
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">               
-                <li class="cta"><a href="/admin/"" class="nav-link"><span>管理員登入</span></a></li>
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0" data-btn="login" style="margin-top: 70%;">
+                <p><a href="admin" class="btn btn-primary btn-pill ">管理員登入</a></p>
               </ul>
             </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
+                class="icon-menu h3"></span></a>
           </div>
         </div>
       </div>
-      
+
     </header>
 
     <div class="intro-section" id="home-section">
-      
-      <div class="slide-1" style="background-image: url({% static "images/hero_1.jpg" %});" data-stellar-background-ratio="0.5">
+
+      <div class="slide-1" style="background-image: url({% static "images/hero_1.jpg" %});"
+        data-stellar-background-ratio="0.5">
         <div class="container ">
           <div class="row align-items-center ">
-            <div class="col-12 " >
-              <div class="row align-items-center justify-content-center text-center" >
-                <div class="col-lg-6 mb-4 d-flex justify-content-center" id="hi"> 
+            <div class="col-12 ">
+              <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-6 mb-4 d-flex justify-content-center" id="hi">
                   <div>
                     <h1 data-aos="fade-up" data-aos-delay="100 ">學員登入</h1>
-                    <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">學員登入，或是註冊學員加入我們!</p>
-                    <p data-aos="fade-up" data-aos-delay="300" style="padding: 5% 5% 5% 0%"><a href="login"" class="btn btn-primary py-3 px-5 btn-pill">登入</a></p>
-                    <p data-aos="fade-up" data-aos-delay="300" style="padding: 0% 5% 5% 0%"><a href="register" class="btn btn-primary py-3 px-5 btn-pill">註冊</a></p>
+                    <p class="mb-4" data-aos="fade-up" data-aos-delay="200">學員登入，或是註冊學員加入我們!</p>
+                    <p data-aos="fade-up" data-aos-delay="300" style="padding: 5% 5% 5% 0%"><a href="login"" class=" btn
+                        btn-primary py-3 px-5 btn-pill">登入</a></p>
+                    <p data-aos="fade-up" data-aos-delay="300" style="padding: 0% 5% 5% 0%"><a href="register"
+                        class="btn btn-primary py-3 px-5 btn-pill">註冊</a></p>
                   </div>
                 </div>
 
@@ -108,38 +124,41 @@
                 </div> -->
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
     </div>
 
-    
+
     <div class="site-section courses-title" id="courses-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
-            <h2 class="section-title">課程包含</h2>
-                <div class="row justify-content-center">
-                 <div class="col-7 text-center">
-                  <button class="customPrevBtn btn btn-success m-1">往左</button>
-                  <button class="customNextBtn btn btn-success m-1">往右</button>
-                 </div>
-                 </div>
+            <h2 class="section-title">課程預覽</h2>
+            <h3 class=" preview">註冊學員觀看更多課程內容!</h3>
+            <div class="row justify-content-center">
+              <div class="col-7 text-center">
+                <button class="customPrevBtn btn btn-success m-1">往左</button>
+                <button class="customNextBtn btn btn-success m-1">往右</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
-    <div class="site-section courses-entry-wrap"  data-aos="fade-up" data-aos-delay="100">
-      <div class="container">     
+
+    <div class="site-section courses-entry-wrap" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row">
           <div class="owl-carousel col-12 nonloop-block-14">
             <div class="course bg-white h-100 align-self-stretch">
-              <p><img src="{% static "images/img6.jpg"%}" alt="Image" class="img-fluid"></p>
+              <p> <iframe width="100%" height="315" src="https://www.youtube.com/embed/cnCh8096ytA" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe></p>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">適合新手</span>
-                <h2>HTML5+CSS3</h2> 
+                <h2>HTML5+CSS3</h2>
                 <h2>+Bootstrap4</h2>
                 <h2>前端網頁設計A-Z</h2>
               </div>
@@ -165,7 +184,7 @@
               </div>
             </div> -->
 
-            
+
             <div class="course bg-white h-100 align-self-stretch">
               <p><img src="{% static "images/img_6.jpg"%}" alt="Image" class="img-fluid"></p>
               <div class="course-inner-text py-4 px-4">
@@ -177,8 +196,8 @@
               <div class="d-flex border-top stats">
                 <div class="py-3 px-4"><span class="icon-clock-o"></span>4 Lessons </div>
                 <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>              
-             </div>
+              </div>
+            </div>
 
             <div class="course bg-white h-100 align-self-stretch">
               <p><img src="{% static "images/JQUERY.PNG"%}" alt="Image" class="img-fluid"></p>
@@ -187,59 +206,63 @@
                 <h2>JQuery新手入門 </h2>
                 <h5>課程籌備中...</h5>
               </div>
-              <div class="d-flex border-top stats">      
+              <div class="d-flex border-top stats">
                 <div class="py-3 px-4"><span class="icon-clock-o"></span>4 Lessons</div>
                 <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
               </div>
-             </div>
+            </div>
 
 
-            </div>              
-          </div>
-        </div>
-     </div>
-    </div>
-
-    <div class="site-section bg-image overlay" id="me-section" style="background-image: url({% static 'images/hero_1.jpg'%});">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-8 text-center testimony">
-            <img src="{%static "images/person_transparent.png" %}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-            <h3 class="mb-4">李冠霆</h3>
-            <blockquote>
-              <p>&ldquo; 國立臺灣科技大學  資訊管理所   &rdquo;</p>
-            </blockquote>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="site-section" id="programs-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-lg-7 text-center"  data-aos="fade-up" data-aos-delay="">
-            <h2 class="section-title">鷹架式數位學習?</h2>
-            <!-- <h2 class="section-title">(Flipped Classroom）</h2>
+  <div class="site-section bg-image overlay" id="me-section"
+    style="background-image: url({% static 'images/hero_1.jpg'%});">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 text-center testimony">
+          <img src="{%static "images/person_transparent.png" %}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+          <h3 class="mb-4">李冠霆</h3>
+          <blockquote>
+            <p>&ldquo; 國立臺灣科技大學 資訊管理所 &rdquo;</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section" id="programs-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
+          <h2 class="section-title">鷹架式數位學習?</h2>
+          <!-- <h2 class="section-title">(Flipped Classroom）</h2>
             <p>是為國際間教育工作者所關注的新興教學模式。</p>
             <p>翻轉教室的核心概念即是將教學模式「翻轉」，</p>
             <p> 將傳統「教師在課堂教授課程內容，學生在課後討論練習完成作業」授課模式，</p>
             <p> 翻轉成為「學生在課前觀看教師預先錄製的課程內容，</p>
             <p>然後到課堂上進行討論練習並完成作業」的上課方式。</p>
             <p>本課程將會搭配翻轉教室，來完成一系列課程，協助學生學得更好。</p> -->
-          </div>
         </div>
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static "images/e-learning-training-school-online-learn-knowledge.jpg"%}" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="text-black mb-4">結合數位學習</h2>
-            <p class="mb-4">數位學習是學習者應用數位媒介學習的過程，數位媒介包括網際網路、電腦、互動式教材等。應用的範圍包括網路化學習、電腦化學習、虛擬教室及數位合作。</p>
-            <p class="mb-4">學習者是透過網路連線到課程提供者的伺服器取得課程內容，並且在自己的電腦上進行課程的學習，同時，由於課程內容儲存在課程提供者的伺服器，課程提供者可以隨時將最新的課程內容，隨時更新內容及介面，讓透過網路取得課程的學習者，隨時可以更好的教學方法，取得最新的知識。</p>
-            <p class="mb-4">因此，今日的數位學習，因為網路的發達，解決了過去教學情境所面對的時間及空間之限制。</p>
+      </div>
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <img src="{% static "images/e-learning-training-school-online-learn-knowledge.jpg"%}" alt="Image"
+            class="img-fluid">
+        </div>
+        <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-black mb-4">結合數位學習</h2>
+          <p class="mb-4">數位學習是學習者應用數位媒介學習的過程，數位媒介包括網際網路、電腦、互動式教材等。應用的範圍包括網路化學習、電腦化學習、虛擬教室及數位合作。</p>
+          <p class="mb-4">
+            學習者是透過網路連線到課程提供者的伺服器取得課程內容，並且在自己的電腦上進行課程的學習，同時，由於課程內容儲存在課程提供者的伺服器，課程提供者可以隨時將最新的課程內容，隨時更新內容及介面，讓透過網路取得課程的學習者，隨時可以更好的教學方法，取得最新的知識。
+          </p>
+          <p class="mb-4">因此，今日的數位學習，因為網路的發達，解決了過去教學情境所面對的時間及空間之限制。</p>
 
-            
-<!-- 
+
+          <!-- 
             <div class="d-flex align-items-center custom-icon-wrap mb-3">
               <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
               <div><h3 class="m-0">22,931 Yearly Graduates</h3></div>
@@ -250,67 +273,67 @@
               <div><h3 class="m-0">150 Universities Worldwide</h3></div>
             </div>-->
 
-          </div>
         </div>
-
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-7 mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static "images/scaffolding2.jpg" %}" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-4 mr-auto order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="text-black mb-4">鷹架式學習</h2>
-            <p class="mb-4">數位學習搭配漸進式課程、多元化教材、實戰練習與教師即時輔助之學習鷹架來輔助學生學習，藉以提升學生學習成效。</p>
-            <p class="mb-4"></p>學生在學習新概念或技能時，透過提供足夠的支援教材來提升學生學習能力的教學。</p>
-            <p class="mb-4">支援教材包括：教材資源、激發興趣的任務、示範及解答指導。</p>
-            <p class="mb-4">當學生發展了自主學習策略，提升了學習技能與知識時，這些支援教材會逐漸褪除，讓學生獨立實作，此過程稱之為鷹架式學習。</p>
-
-            <!-- <div class="d-flex align-items-center custom-icon-wrap mb-3">
-              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
-              <div><h3 class="m-0">22,931 Yearly Graduates</h3></div>
-            </div>
-
-            <div class="d-flex align-items-center custom-icon-wrap">
-              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
-              <div><h3 class="m-0">150 Universities Worldwide</h3></div>
-            </div> -->
-
-          </div>
-        </div>
-
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static "images/book111.jpg" %}"alt="Image" class="img-fluid">
-            <img src="{% static "images/book222.jpg" %}"alt="Image" class="img-fluid" width="250px" height="250px">
-          </div>
-          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="text-black mb-4">參考書目</h2>
-            <p class="mb-4">HTML+CSS最強圖解實戰講座</p>
-            <p class="mb-4">Python Django最強實戰</p>
-            <p class="mb-4">Udemy：The Web Developer Bootcamp</p>
-
-            <!-- <div class="d-flex align-items-center custom-icon-wrap mb-3">
-              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
-              <div><h3 class="m-0">22,931 Yearly Graduates</h3></div>
-            </div>
-
-            <div class="d-flex align-items-center custom-icon-wrap">
-              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
-              <div><h3 class="m-0">150 Universities Worldwide</h3></div>
-            </div> -->
-
-          </div>
-        </div>
-
       </div>
+
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-7 mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <img src="{% static "images/scaffolding2.jpg" %}" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-4 mr-auto order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-black mb-4">鷹架式學習</h2>
+          <p class="mb-4">數位學習搭配漸進式課程、多元化教材、實戰練習與教師即時輔助之學習鷹架來輔助學生學習，藉以提升學生學習成效。</p>
+          <p class="mb-4"></p>學生在學習新概念或技能時，透過提供足夠的支援教材來提升學生學習能力的教學。</p>
+          <p class="mb-4">支援教材包括：教材資源、激發興趣的任務、示範及解答指導。</p>
+          <p class="mb-4">當學生發展了自主學習策略，提升了學習技能與知識時，這些支援教材會逐漸褪除，讓學生獨立實作，此過程稱之為鷹架式學習。</p>
+
+          <!-- <div class="d-flex align-items-center custom-icon-wrap mb-3">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
+              <div><h3 class="m-0">22,931 Yearly Graduates</h3></div>
+            </div>
+
+            <div class="d-flex align-items-center custom-icon-wrap">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
+              <div><h3 class="m-0">150 Universities Worldwide</h3></div>
+            </div> -->
+
+        </div>
+      </div>
+
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <img src="{% static "images/book111.jpg" %}" alt="Image" class="img-fluid">
+          <img src="{% static "images/book222.jpg" %}" alt="Image" class="img-fluid" width="250px" height="250px">
+        </div>
+        <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-black mb-4">參考書目</h2>
+          <p class="mb-4">HTML+CSS最強圖解實戰講座</p>
+          <p class="mb-4">Python Django最強實戰</p>
+          <p class="mb-4">Udemy：The Web Developer Bootcamp</p>
+
+          <!-- <div class="d-flex align-items-center custom-icon-wrap mb-3">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-graduation-cap"></span></span>
+              <div><h3 class="m-0">22,931 Yearly Graduates</h3></div>
+            </div>
+
+            <div class="d-flex align-items-center custom-icon-wrap">
+              <span class="custom-icon-inner mr-3"><span class="icon icon-university"></span></span>
+              <div><h3 class="m-0">150 Universities Worldwide</h3></div>
+            </div> -->
+
+        </div>
+      </div>
+
     </div>
+  </div>
 
 
 
-   
 
 
 
-    <!-- <div class="site-section pb-0">
+
+  <!-- <div class="site-section pb-0">
 
       <div class="future-blobs">
         <div class="blob_2">
@@ -356,19 +379,19 @@
             </div>
  -->
 
-          <!-- </div>
+  <!-- </div>
           <div class="col-lg-7 align-self-end"  data-aos="fade-left" data-aos-delay="200">
             <img src="{% static "images/person_transparent.png" %}" alt="Image" class="img-fluid">
           </div> -->
-        </div>
-      </div>
-    </div>
-
-    
+  </div>
+  </div>
+  </div>
 
 
 
-    <!-- <div class="site-section bg-light" id="contact-section">
+
+
+  <!-- <div class="site-section bg-light" id="contact-section">
       <div class="container">
 
         <div class="row justify-content-center">
@@ -442,23 +465,24 @@
           
         </div> -->
 
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-            <p>
-        
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | NTUST SIS </i> 
-        
-      </p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </footer>
+  <div class="row pt-5 mt-5 text-center">
+    <div class="col-md-12">
+      <div class="border-top pt-5">
+        <p>
 
-  
-    
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved | NTUST SIS </i>
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </footer>
+
+
+
   </div> <!-- .site-wrap -->
 
   <script src="{%static 'js/jquery-3.3.1.min.js' %}"></script>
@@ -475,6 +499,7 @@
   <script src="{%static 'js/jquery.fancybox.min.js' %}"></script>
   <script src="{%static 'js/jquery.sticky.js' %}"></script>
   <script src="{%static 'js/main.js' %}"></script>
-    
-  </body>
+
+</body>
+
 </html>

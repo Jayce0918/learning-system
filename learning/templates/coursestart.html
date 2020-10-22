@@ -31,6 +31,19 @@
   <!-- 測試 -->
 
 
+  <style>
+    #data{
+      padding-right: 40%;
+    }
+    #out{    
+    position: absolute;
+    left: 70%;
+    top: -1%;
+}
+    }
+  </style>
+
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -48,11 +61,11 @@
 
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
-      <div class="container-fluid">
+      <div class="container-fluid" style="padding-right: 5%;">
         <div class="d-flex align-items-center">
           <div class="site-logo mr-auto w-25"><a href="/coursestart/">網頁設計學習系統</a></div>
-
-          <!--           <div class="mx-auto text-center">
+          <!-- 
+                    <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#courses-section" class="nav-link">課程總覽</a></li>
@@ -63,9 +76,11 @@
 
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="/personal/" class="nav-link"><span>修改個人資料</span></a></li>
-                <li class="cta"><a href="/logout/" class="nav-link"><span>登出</span></a></li>
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block mt-0 p-0" data-btn="login" >
+                
+                <p id="data"><a href="/personal/" class="btn btn-primary btn-pill ">修改個人資料</a></p>
+                <p id="out"><a href="/logout/" class="btn btn-primary btn-pill ">登出</a></p>
+                
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
