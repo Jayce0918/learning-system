@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}"/>
     <link rel="stylesheet" href="{% static "css/aos.css" %}"/> 
     <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <style>
+      .errorlist{
+        color:red;
+      }      
+    </style>
+
 </head>
 <!-- 註冊 -->
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -60,7 +66,7 @@
                             <table border="1">
                                {{ form }}
                             </table>
-                            <button type="submit">確定</button>
+                            <button type="submit" )">確定</button>
                         </form>
                     </center>
   
@@ -82,7 +88,9 @@
     
       
     </div> <!-- .site-wrap -->
-  
+
+   
+
     <script src="{%static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{%static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
     <script src="{%static 'js/jquery-ui.js' %}"></script>
@@ -97,6 +105,6 @@
     <script src="{%static 'js/jquery.fancybox.min.js' %}"></script>
     <script src="{%static 'js/jquery.sticky.js' %}"></script>
     <script src="{%static 'js/main.js' %}"></script>
-      
+   
     </body>
   </html>

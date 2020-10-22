@@ -13,24 +13,24 @@ class RegisterForm(UserCreationForm):
     class Meta:
         model = User
         # 決定註冊欄位要有哪些及順序
-        fields = ('username','password1','password2','name','sex','phone')
+        fields = ('username','password1','password2','name','sex')
         # 各欄位顯示的標籤，如沒有則就是原本的變數名稱
         labels = {
             "username": "帳號",
             "name":"姓名",
             "sex":"性別",
-            "phone":"手機",
+            # "phone":"手機",
          }
 
 class EditForm(ModelForm):
     class Meta:
         model = User
-        fields = ('name','sex','email','phone')
+        fields = ('name','sex','email')
         labels = {
             "name":_("姓名"),
             "sex":"性別",
             "email":"信箱",
-            "phone":"手機",
+            # "phone":"手機",
         }
 
 #作業圖片牆

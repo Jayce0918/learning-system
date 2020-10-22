@@ -8,6 +8,8 @@ from django.contrib.auth.forms import SetPasswordForm
 
 
 
+
+
 def home(request):
     return render(request,'home.html')
 def register(request):
@@ -71,7 +73,7 @@ def register(request):
         user = authenticate(username=username, password=raw_password)
         login(request, user)
         # ------------------------------------
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/coursestart/')
   else:
     form = RegisterForm()
   return render(request,'register.html',{'form':form,})
@@ -86,9 +88,10 @@ def User_login(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(username=username, password=password)
+
         # 如果User是已註冊的就login
-        if user is not None:
-            login(request, user)
+        if user is not None: 
+            login(request, user)           
             return HttpResponseRedirect('/coursestart/')
         else:
             # 如果登入失敗，則丟出錯誤訊息
@@ -130,7 +133,7 @@ def reset_password(request):
 # 留言板
 
 
-#作業牆
 
+#作業牆
 
 
