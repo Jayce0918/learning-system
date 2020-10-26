@@ -255,14 +255,117 @@
                 <div id="tabs-2">
                   <ol>
                     <li>Bootstrap元件在官方文檔中皆有現成程式碼讓開發者去複製及修改，請各位同學務必親自練習10種常用元件之修改。</li>
-                    <li>查閱程式官方文檔無論是網頁前端或後端甚至其他領域之程式學習都需要具備的能力，因為程式語言的規則的更新是非常頻繁的，官方文件則是更新最快最準確的文本教學。</li>
+                    <li>查閱程式官方文檔無論是網頁前端或後端甚至其他領域之程式學習都需要具備的能力，因為程式語言的規則的更新是非常頻繁的，官方文件則是更新最快最準確的文本教學。</li><hr>
+                  </ol>
+                  <ol>
+                    <h1><i><b>教學程式碼說明</b></i></h1>
+                    <li><span style="background-color:yellow">按鈕 </span>: 
+                      <pre>
+btn-sm小按鈕
+btn-lg大按鈕
+active，設定按鈕為顏色變深被按著的狀態
+disable，設定按鈕顏色變淺無法點案的停用狀態
+</pre></li>
+<li><span style="background-color:yellow">按鈕群組 </span>: 
+  <pre>
+將數個按鈕組合再一起，原則是按鈕都在相同div中並加設btn-group類別和role=”group”屬性，此時按鈕會呈水平排列，
+若要垂直排列則使用btn-group-vertical類別
+大按鈕btn-group-lg
+小按鈕btn-group-sm
 
+</pre></li>
+<li><span style="background-color:yellow">警報效果 </span>: 
+  <pre>
+警報效果元件用來顯示醒目的區塊來提供重要訊息，在div元素上加上alert和alert-*，等類別
+32~34行有超連結的警報效果
+35~39行建立可關閉的警報效果，35行div元素加上alert-dismissable類別，而37~38行則是建立關閉警報的按鈕
+    
+</pre></li>
+<li><span style="background-color:yellow">下拉式選單 </span>: 
+  <pre>
+下拉式選單要先有下拉的按鈕，再加上dropdown-toggle類別和drop-toggle="dropdown"屬性
+下拉式dropdown類別、上拉dropup、向右dropright、向左dropleft
+清單標題dropdown-header
+清單分隔線dropdown-divider
+    
+</pre></li>
+<li><span style="background-color:yellow">超大螢幕效果 </span>: 
+  <pre>
+jumbotron元件用來江區塊擴展至瀏覽器可視範圍，達到超大螢幕效果
+加入大按鈕及其他設計，凸顯頁面目的
+加上背景圖片
+    
+</pre></li>
+<li><span style="background-color:yellow">導覽列 </span>: 
+  <pre>
+導覽列是網頁上十分常見的元件，
+11行navbar-light和bg-light將導覽列和背景設定顏色
+11行navbar-expand-md類別設定響應是切換點為768px fixed-top將導覽列固定在上方
+12行加入img圖示，顯示網站圖案
+14行navbar-brand類別，放置網站名稱和超連結
+15行navbar-toggle類別和data-toggle=”collapse”用來製作可折疊按鈕，15span元素加上navbar-toggler-icon類別表示導覽按鈕
+19行collapse和navbar-collapse類別，用來放置導覽列可折疊項目
+20行navbar-nav，用來設定導覽列項目，mr-auto讓等等的相鄰表單元素自動靠右
+31行導覽列放置表單，form-inline類別設定行內表單，讓輸入欄位和按鈕排成一行
+38行由於將導覽列固定在上方會蓋住下方網頁內容，所以建議在下文加上方留白之樣式，這裡我們留白70px
+    
+</pre></li>
+<li><span style="background-color:yellow">分頁導覽</span>: 
+  <pre>
+分頁導覽也是很常見的功能，使用者可以點及頁數就可以跳轉到不同頁面
+關鍵在於12行ul元素中加入pagination類別，表示該元素用來做分頁導覽元件
+然後在li元素中加上page-item類別和<a>元上加上page-link類別，製作頁數與該頁之超連結
+18行active類別表示啟用頁數，20行diabled表示停用頁數
+另外，分頁之大小尺寸也可以透過設定12行的pagination-lg或pagination-sm類別來設計
+    
+</pre></li>
+<li><span style="background-color:yellow">輪播 </span>: 
+  <pre>
+輪播元件包含了 :
+
+1.輪播指示(carousel indicator)，由ol和li元素組成，用來根據圖片的張數在圖片下方顯示細長條狀給使用者點選，範例有三張圖片所以有三個細長條
+2.輪播內容(carousel inner)，由多個div元素組成，用來顯示圖片和標題
+3.輪播控制(carousel control)，由1個a tag和span tag組成，顯示前後切換連結
+
+13行div元素加上carousel和slide類別製作輪播，並將id屬性設為myCarousel以供輪播指示和輪播控制做為參考
+15行使用ol元素加上carousel-indicators類別製作輪播指示，然後使用li元素製作指示項目，
+其中16data-target屬性用來設定要使用的輪播元件，此例為#myCarousel，16data-slide-to屬性用來設定圖片的流水編號，
+此例有三張所以設定0、1、2(注意，從0開始)，並在指示項目加上active類別表示目前啟用指示項目
+21~46行使用div元素加上carousel-inner類別製作輪播內容，此例有三個輪播項目
+22~28行使用div元素加上item類別製作第一個輪播項目並加上active表示目前啟用項目，包含圖片和輪播標題，輪播標題使用carousel-caption類別
+接著使用div元素加上item類別製作第二和三個項目
+
+48~54行使用a元素加上carousel-control-pre類別製作向前切換的輪播控制器，
+carousel-control-next類別製作向後切換的輪播控制器，href屬性設定要使用的輪播元件此例為#myCarousel，
+而data-slide="pre"屬性表示向前切換;"next"表示向後切換，span元素才包起前後切換的的圖示
+    
+</pre></li>
+<li><span style="background-color:yellow">卡片 </span>: 
+  <pre>
+卡片元件是一個具有彈性與擴充性的內容容器，可以包含頁首(card-header)主體(card-body)及頁尾(card-footer)
+使用card-img-top類別，讓卡片圖片放置在上方
+card-title製作卡片標題及card-text製作卡片文字
+
+</pre></li>
+<li><span style="background-color:yellow">摺疊 </span>: 
+  <pre>
+摺疊元件用來將區塊摺疊起來，例子中按一下卡片頁首就會展開卡片主體，再按一下又會折疊起來，一次只會展開一個卡片主體
+程式碼看起來有點負責但其實是差不多的，所以只要要了解一組程式碼就好
+使用div加上accordion類別製作一組可折疊卡片，此例有三個卡片
+使用div加上card類別製作第一個卡片，裡面包含頁首與摺疊區塊(卡片主體)
+card-header製作頁首，href製作展開的超連結，加上data-toggle='collapse'屬性啟用折疊元件，
+再加上data-parent='#accordion1’屬性，設定一次只能展開一張卡片
+17行只用collapse類別製作摺疊區塊，cardbody是卡片主體裡面包含內文
+之後再用相同方式，製作第二個與第三個卡片
+    
+</pre></li>
                   </ol>
                 </div>
 
                 <div id="tabs-3">
                   <iframe src="https://docs.google.com/document/d/e/2PACX-1vQVn_lJK3jhobmwtyAPbWtjh6Tyw4tfFSDSjc1IY3JmHp_BQXXqplsL_LnEqLb0H2yYDz-1zuw3DFZg/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  webkitallowfullscreen="true">
+                </iframe>
                 </div>
                 <div id="tabs-4">
                   <iframe src="https://docs.google.com/document/d/e/2PACX-1vTtVjOI23dd4SHoQUT7NZs-xG0-bfL44LJDpERUvwK7_RquSEUZnfVmBD12Re2gt7DB7IRXIsUelx15/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"

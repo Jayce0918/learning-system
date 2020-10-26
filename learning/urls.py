@@ -1,4 +1,4 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 from . import views
 from django.conf.urls.static import static
 from django.conf import settings
@@ -30,8 +30,13 @@ urlpatterns = [
     url(r'^lesson4_2/',views.lesson_14),
     url(r'^lesson4_3/',views.lesson_15),
 
+    
+    
   
     
+
+  
+
 ]
 
 
