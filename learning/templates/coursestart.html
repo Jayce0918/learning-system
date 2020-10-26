@@ -291,6 +291,17 @@
   <script src="{%static 'js/jquery.sticky.js' %}"></script>
   <script src="{%static 'js/main.js' %}"></script>
   <script>alertify.success('登入成功 ! ');</script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+    items: 3, // 一次輪播幾個項目
+    loop: false, // 循環輪播
+    margin: 50, // 與右邊圖片的距離
+    nav: false, // 導航文字
+    autoplay: false, // 自動輪播
+    autoplayTimeout: 100, // 切換時間
+    autoplayHoverPause: true // 滑鼠經過時暫停
+    })
+    </script>
 </body>
 
 </html>
