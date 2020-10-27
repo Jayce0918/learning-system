@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning',  
 
-    'django.contrib.sites',  
+    
         
 ]
 

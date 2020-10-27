@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^',include('learning.urls')),    
 
     
-    url(r'^comments/', include('django_comments.urls')),  
+    
 
 ]
 
