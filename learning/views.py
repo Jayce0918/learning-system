@@ -6,10 +6,6 @@ from .form import RegisterForm, EditForm
 from django.contrib.auth.forms import SetPasswordForm
 
 
-
-
-
-
 def home(request):
     return render(request,'home.html')
 def register(request):
