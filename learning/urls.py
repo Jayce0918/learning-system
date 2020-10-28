@@ -3,6 +3,8 @@ from . import views
 from django.conf.urls.static import static
 from django.conf import settings
 
+
+
 urlpatterns = [
     url(r'^$',views.home),   
     url(r'^register/',views.register),
@@ -30,8 +32,19 @@ urlpatterns = [
     url(r'^lesson4_2/',views.lesson_14),
     url(r'^lesson4_3/',views.lesson_15),
 
+
+
     
-    
+
+	# url(r'^post2/$', views.post2), #資料新增，資料作驗證
+
+	# url(r'^delete/(\d+)/$', views.delete),
+	
+	# url(r'^edit/(\d+)/$', views.edit), # 由 瀏覽器 開啟
+	# url(r'^edit/(\d+)/(\w+)$', views.edit), # 由 edit.html 按 送出 鈕
+
+	# url(r'^edit2/(\d+)/(\w+)$', views.edit2),
+	# url(r'^postform/$', views.postform), # 表單驗證
   
   
 

@@ -27,7 +27,13 @@ class User(AbstractUser):
         return self.name
 
  #留言板
-
+class student(models.Model):
+	cName = models.CharField(max_length=20, null=False)
+	
+	cAddr = models.CharField(max_length=255,blank=True, default='')
+	
+	def __str__(self):
+		return self.cName
 
 #作業牆
 

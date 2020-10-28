@@ -2,6 +2,7 @@ from django.forms import ModelForm
 from .models import User
 from django.contrib.auth.forms import UserCreationForm, SetPasswordForm
 from django.utils.translation import gettext as _
+from django import forms
 
 
 class RegisterForm(UserCreationForm):
@@ -40,7 +41,10 @@ class EditForm(ModelForm):
 
 # 留言板
 
-
+# class PostForm(forms.Form):
+# 	cName = forms.CharField(max_length=20,initial='')
+	
+# 	cAddr = forms.CharField(max_length=255,initial='')
   
 
 #忘記密碼
