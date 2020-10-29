@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title> HTML5+CSS3+Bootstrap4 網頁設計 A-Z</title>
 
+
   <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
   <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
   <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}">
@@ -19,36 +20,33 @@
   <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}">
   <link rel="stylesheet" href="{% static "css/aos.css" %}">
   <link rel="stylesheet" href="{% static "css/style.css" %}">
-<!-- JQUERY -->
+  <!-- JQUERY -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <style>
-    #test{
+    #test {
       float: right;
     }
-    #tabs{
-      
-      float: left;
+
+    #tabs {
+
+      /* float: left; */
       margin-bottom: 8%;
     }
-    #tabs-2{
+
+    /* #tabs-2 {
       width: 1200px;
-    }
-    #tabs-3{
-      width: 1200px;
-    }
-    #practice{
+    } */
+
+    #practice {
       clear: both;
     }
   </style>
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide"
+  data-aos-duration="800" data-aos-delay="0">
 
-
-
-
-  
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -57,28 +55,37 @@
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
+      <div class="site-mobile-menu-body">
+        <ul class="site-nav-wrap">
+          <li><a href="#vedio" class="nav-link active">課程影片</a></li>
+          <li><a href="#tabs-1" class="nav-link">課程教材</a></li>
+          <li><a href="#practice" class="nav-link">程式練習</a></li>
+          <li><a href="#disqus_thread" class="nav-link">課程討論</a></li>
+        </ul>
+      </div>
     </div>
 
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+    <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 74.425px;">
+      <header class="site-navbar py-4 js-sticky-header site-navbar-target shrink" role="banner"
+        style="width: 571.2px; position: fixed; top: 0px; z-index: inherit;">
 
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
 
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="#vedio" class="nav-link">課程影片</a></li>
-                <li><a href="#tabs-1" class="nav-link">課程教材</a></li>
-                <li><a href="#practice" class="nav-link">程式練習</a></li>
-                <li><a href="#disqus_thread" class="nav-link">課程討論</a></li>
-              </ul>
-            </nav>
-          </div>
+            <div class="mx-auto text-center">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                  <li><a href="#vedio" class="nav-link active">課程影片</a></li>
+                  <li><a href="#tabs-1" class="nav-link">課程教材</a></li>
+                  <li><a href="#practice" class="nav-link">程式練習</a></li>
+                  <li><a href="#disqus_thread" class="nav-link">課程討論</a></li>
+                </ul>
+              </nav>
+            </div>
 
-          <!-- <div class="ml-auto w-25">
+            <!-- <div class="ml-auto w-25">
             <!-- <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
                 <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
@@ -86,15 +93,17 @@
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
           </div> -->
+          </div>
         </div>
-      </div>
 
-    </header>
+      </header>
+    </div>
 
     <div class="intro-section single-cover" id="home-section">
 
-      <div class="slide-1 " style="background-image: url({% static 'images/img6.JPG' %}"
-        ); " data-stellar-background-ratio=" 0.5">
+      <div class="slide-1 "
+        style="background-image: url(&quot;/static/images/img6.JPG&quot;); background-position: 50% 225px;"
+        );="" "="" data-stellar-background-ratio=" 0.5">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
@@ -104,6 +113,8 @@
                   <h1 data-aos="fade-up" data-aos-delay="0">撰寫Bootstrap網頁</h1>
                   <p data-aos="fade-up" data-aos-delay="100">&bullet; 此章節共 此章節共 1 小時 3 分 5 秒 / 1 份作業 &bullet; </p>
                 </div>
+
+
               </div>
             </div>
 
@@ -115,189 +126,227 @@
     <div class="site-section">
       <div class="container">
         <div class="row">
-          <div class=" mb-5">
-          <div id="987">
-            <div class="mb-5" id="vedio">
-              
-              <div>
-              <h2 class="mb-5" >課程影片</h2>
-              <iframe width="60%" height="500" src="https://www.youtube.com/embed/xKuT0OWcAtU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="col-lg-4 pl-lg-5" id="test">
+          <div class=" mb-5 w-100">
 
-                  <div class="mb-5 text-left border rounded course-instructor">
-                    <div class="mb-5 ">
-                      <h3 class="text-black">章節內容</h3>
-                      <hr>
-      
-                      <details>
-                        <summary>第 0 節 : 課程介紹</summary>
-                        <ol>
-                          <li><a href="/lesson0/">課程與網頁程式介紹</a></li>
-                        </ol>
-                      </details>
-      
-                      <details>
-                        <summary>第 1 節 : HTML5網頁設計建構</summary>
-                        <ol>
-                          <li><a href="/lesson1_1/">HTML概要</a></li>
-                          <li><a href="/lesson1_2/">HTML5新增元件與屬性</a></li>
-                          <li><a href="/lesson1_3/">作業區 : HTML 5 practice</a></li>
-                        </ol>
-                      </details>
-      
-                      <details>
-                        <summary>第 2 節 : CSS3標籤與使用方式</summary>
-                        <ol>
-                          <li><a href="/lesson2_1/">CSS概要</a></li>
-                          <li><a href="/lesson2_2/">選擇器與常用屬性</a></li>
-                          <li><a href="/lesson2_3/">盒子模型與基本版面設計</a></li>
-                          <li><a href="/lesson2_4/">CSS3新手法與特效</a></li>
-                          <li><a href="/lesson2_5/">作業區 : CSS 3 practice</a></li>
-                        </ol>
-                      </details>
-      
-                      <details>
-                        <summary>第 3 節 : Bootstrap4前端框架</summary>
-                        <ol>
-                          <li><a href="/lesson3_1/">撰寫Bootstrap網頁</a></li>
-                          <li><a href="/lesson3_2/">Bootstrap網格系統</a></li>
-                          <li><a href="/lesson3_3/">CSS樣式</a></li>
-                          <li><a href="/lesson3_4/">10個常用的Bootstrap元件</a></li>
-                          <li><a href="/lesson3_5/">作業區 : Bootstrap 4 practice</a></li>
-                        </ol>
-                      </details>
-      
-                      <details>
-                        <summary>第 4 節 : 部署到Heroku</summary>
-                        <ol>
-                          <li><a href="/lesson4_1/">程式編輯器，ColorLib介紹</a></li>
-                          <li><a href="/lesson4_2/">Heroku建立與安裝</a></li>
-                          <li><a href="/lesson4_3/">部署至Heroku與期末專案</a></li>
-                        </ol>
-                      </details>
+            <div id="987">
+              <div class="mb-5 col-md-12" id="vedio">
+
+                <div class="mb-5 col-md-12">
+
+
+
+                  <div class="row justify-content-between">
+                    
+                    <div class="col-12 col-md-7">
+                      <h2 class="mb-5">課程影片</h2>
+                      <iframe width="100%" height="500" src="https://www.youtube.com/embed/xKuT0OWcAtU" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
                     </div>
+
+                    <div class="col-lg-4 pl-lg-5 col-md-4" id="test">
+
+                      <div class="mb-5 text-left border rounded course-instructor">
+                        <div class="mb-5 ">
+                          <h3 class="text-black">章節內容</h3>
+                          <hr>
+
+                          <details>
+                            <summary>第 0 節 : 課程介紹</summary>
+                            <ol>
+                              <li><a href="/lesson0/">課程與網頁程式介紹</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 1 節 : HTML5網頁設計建構</summary>
+                            <ol>
+                              <li><a href="/lesson1_1/">HTML概要</a></li>
+                              <li><a href="/lesson1_2/">HTML5新增元件與屬性</a></li>
+                              <li><a href="/lesson1_3/">作業區 : HTML 5 practice</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 2 節 : CSS3標籤與使用方式</summary>
+                            <ol>
+                              <li><a href="/lesson2_1/">CSS概要</a></li>
+                              <li><a href="/lesson2_2/">選擇器與常用屬性</a></li>
+                              <li><a href="/lesson2_3/">盒子模型與基本版面設計</a></li>
+                              <li><a href="/lesson2_4/">CSS3新手法與特效</a></li>
+                              <li><a href="/lesson2_5/">作業區 : CSS 3 practice</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 3 節 : Bootstrap4前端框架</summary>
+                            <ol>
+                              <li><a href="/lesson3_1/">撰寫Bootstrap網頁</a></li>
+                              <li><a href="/lesson3_2/">Bootstrap網格系統</a></li>
+                              <li><a href="/lesson3_3/">CSS樣式</a></li>
+                              <li><a href="/lesson3_4/">10個常用的Bootstrap元件</a></li>
+                              <li><a href="/lesson3_5/">作業區 : Bootstrap 4 practice</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 4 節 : 部署到Heroku</summary>
+                            <ol>
+                              <li><a href="/lesson4_1/">程式編輯器，ColorLib介紹</a></li>
+                              <li><a href="/lesson4_2/">Heroku建立與安裝</a></li>
+                              <li><a href="/lesson4_3/">部署至Heroku與期末專案</a></li>
+                            </ol>
+                          </details>
+                        </div>
+                      </div>
+
+                    </div>
+
                   </div>
-      
                 </div>
+
               </div>
-                
-            </div>
-            
 
-            
 
-            
-           </div><!-- 987 -->
- <!-- JQUERY         -->
+
+
+
+            </div><!-- 987 -->
+
+
+            <!-- JQUERY         -->
             <div class="mb-5 ">
               <h3 class="mb-5">課程教材</h3>
-              <div id="tabs">
-                <ul>
-                  <li><a href="#tabs-1">教材投影片</a></li>
-                  <li><a href="#tabs-2">Point</a></li>
-                  <li><a href="#tabs-3">教學程式碼</a></li>
+              <div id="tabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
+                <ul role="tablist"
+                  class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+                  <li role="tab" tabindex="0"
+                    class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                    aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a
+                      href="#tabs-1" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">教材投影片</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-2" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">Point</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-3" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">教學程式碼</a>
+                  </li>
                 </ul>
-                <div id="tabs-1">
-                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgzV2ZevrZocx59DkjMQ5-Hj4sSCznM8NtmKWTLHaJMDdjbQhO8RSDqK-LejHR1w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>                </div>
-                  <div id="tabs-2">
-                   <ol>
-                    <li>Bootstrap是熱門HTML CSS JS框架，使用者無需撰寫CSS或JS程式碼就能開發響應式網頁，而且CSS或JS之設計皆在HTML文本中完成。</li>
-                    <li>至Bootstrap官網查閱Documentation，並取得添加套件程式碼。</li> 
-                    <li>主要檔案如下 : <br>I ) Bootstrap核心CSS檔案 : bootstrap.min.css<br> <br>II ) 將網頁寬度指定為行動裝置的螢幕寬度，縮放比為1:1，當有元素超過螢幕寬度時，shrink-to-fit=no能夠讓網頁不被縮放以符合螢幕寬度
-                      <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp< meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
-                      <br>III ) jQuery核心JavaScript檔案 : jQuery-XXX.min.js(XXX為版本)<br>IV ) Popper.js : popper.min.js <br> V ) Bootstrap核心JavaScript檔案 : bootstrap.min.js</li>                   
-                   </ol> 
-                  </div>  
-                   <div id="tabs-3">
-                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vSQ7UIFJZoadAsVpoqMVLgXdnoXLN-kzlkLB575EYYxMCKtBxLwvP79wYEZLXSAf4CBjTqhJuYpTWCg/pub?embedded=true " frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                   </div> 
-                   
-            </div>
-          
-          
-          
-            <div class="mb-5 ">
-              <h2 class="mb-5" id="practice">程式練習</h2>
-              <iframe height="1000px" width="100%" src="https://repl.it/@jayceli/FatalAgileTraining?lite=true"
-                scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
-                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-            </div>
-          
-
-            <div class="pt-5">
-              <h3 class="mb-5">課程討論</h3>
-              <hr>
-              <div id="disqus_thread"></div>
-              <script>
-
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function () { // DON'T EDIT BELOW THIS LINE
-                  var d = document, s = d.createElement('script');
-                  s.src = 'https://1-1-3.disqus.com/embed.js';
-                  s.setAttribute('data-timestamp', +new Date());
-                  (d.head || d.body).appendChild(s);
-                })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
-                  by Disqus.</a></noscript>
-
-
-
+                <div id="tabs-1" aria-labelledby="ui-id-1" role="tabpanel"
+                  class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="false">
+                  <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vSgzV2ZevrZocx59DkjMQ5-Hj4sSCznM8NtmKWTLHaJMDdjbQhO8RSDqK-LejHR1w/embed?start=false&loop=false&delayms=3000"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
+                </div>
+                <div id="tabs-2">
+                  <ol>
+                   <li>Bootstrap是熱門HTML CSS JS框架，使用者無需撰寫CSS或JS程式碼就能開發響應式網頁，而且CSS或JS之設計皆在HTML文本中完成。</li>
+                   <li>至Bootstrap官網查閱Documentation，並取得添加套件程式碼。</li> 
+                   <li>主要檔案如下 : <br>I ) Bootstrap核心CSS檔案 : bootstrap.min.css<br> <br>II ) 將網頁寬度指定為行動裝置的螢幕寬度，縮放比為1:1，當有元素超過螢幕寬度時，shrink-to-fit=no能夠讓網頁不被縮放以符合螢幕寬度
+                     <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp< meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+                     <br>III ) jQuery核心JavaScript檔案 : jQuery-XXX.min.js(XXX為版本)<br>IV ) Popper.js : popper.min.js <br> V ) Bootstrap核心JavaScript檔案 : bootstrap.min.js</li>                   
+                  </ol> 
+                 </div>  
+                  <div id="tabs-3">
+                   <iframe src="https://docs.google.com/document/d/e/2PACX-1vSQ7UIFJZoadAsVpoqMVLgXdnoXLN-kzlkLB575EYYxMCKtBxLwvP79wYEZLXSAf4CBjTqhJuYpTWCg/pub?embedded=true " frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                  </div> 
+              </div>
             </div>
 
+            <div class="container">
+              <div class="mb-5">
+                <h2 class="mb-5" id="practice">程式練習</h2>
+                <iframe height="1000px" width="100%" src="https://repl.it/@jayceli/FatalAgileTraining?lite=true"
+                  scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
+                  sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              </div>
+            </div>
+
+            <div class=" container pt-5">
+
+              <div class="pt-5 ">
+                <h3 class="mb-5">課程討論</h3>
+                <hr>
+                <div id="disqus_thread"><iframe id="dsq-app5667" name="dsq-app5667" allowtransparency="true"
+                    frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%"
+                    src="https://disqus.com/embed/comments/?base=default&amp;f=1-1-3&amp;t_u=https%3A%2F%2Fbracesbrother.herokuapp.com%2Flesson0%2F&amp;t_d=HTML5%2BCSS3%2BBootstrap4%20%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%20A-Z&amp;t_t=HTML5%2BCSS3%2BBootstrap4%20%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%20A-Z&amp;s_o=desc#version=9e072c150154e3eaaf066d104c0fab0e"
+                    style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 556px !important;"
+                    horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+                <script>
+
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://1-1-3.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                  })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                    powered
+                    by Disqus.</a></noscript>
 
 
+
+              </div>
+
+
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
 
-    <footer class="footer-section bg-light text-center">
-      <div class="container">
-        <p>Copyright ©2020 All rights reserved | NTUST_SIS</p>
-      </div>
-    </footer>
+      <footer class="footer-section bg-light text-center">
+        <div class="container">
+          <p>Copyright ©2020 All rights reserved | NTUST_SIS</p>
+        </div>
+      </footer>
 
 
 
-  </div> <!-- .site-wrap -->
+    </div> <!-- .site-wrap -->
 
-  <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
-  <script src="{% static "js/jquery-migrate-3.0.1.min.js"%}"></script>
-  <script src="{% static "js/jquery-ui.js"%}"></script>
-  <script src="{% static "js/popper.min.js"%}"></script>
-  <script src="{% static "js/bootstrap.min.js"%}"></script>
-  <script src="{% static "js/owl.carousel.min.js"%}"></script>
-  <script src="{% static "js/jquery.stellar.min.js"%}"></script>
-  <script src="{% static "js/jquery.countdown.min.js"%}"></script>
-  <script src="{% static "js/bootstrap-datepicker.min.js"%}"></script>
-  <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
-  <script src="{% static "js/aos.js"%}"></script>
-  <script src="{% static "js/jquery.fancybox.min.js"%}"></script>
-  <script src="{% static "js/jquery.sticky.js"%}"></script>
-  <script src="{% static "js/main.js"%}"></script>
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/jquery.countdown.min.js"></script>
+    <script src="/static/js/bootstrap-datepicker.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/jquery.fancybox.min.js"></script>
+    <script src="/static/js/jquery.sticky.js"></script>
+    <script src="/static/js/main.js"></script>
 
-<!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $( function() {
-      $( "#tabs" ).tabs();
-    } );
-  </script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#tabs").tabs();
+      });
+    </script>
 
 
 
+  </div><iframe style="display: none;"></iframe>
 </body>
 
 </html>

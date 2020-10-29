@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title> HTML5+CSS3+Bootstrap4 網頁設計 A-Z</title>
 
+
   <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
   <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
   <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}">
@@ -29,53 +30,13 @@
 
     #tabs {
 
-      float: left;
+      /* float: left; */
       margin-bottom: 8%;
     }
 
-    #tabs-2 {
+    /* #tabs-2 {
       width: 1200px;
-    }
-
-    #tabs-3 {
-      width: 1200px;
-    }
-
-    #tabs-4 {
-      width: 1200px;
-    }
-
-    #tabs-5 {
-      width: 1200px;
-    }
-
-    #tabs-6 {
-      width: 1200px;
-    }
-
-    #tabs-7 {
-      width: 1200px;
-    }
-
-    #tabs-8 {
-      width: 1200px;
-    }
-
-    #tabs-9 {
-      width: 1200px;
-    }
-
-    #tabs-10 {
-      width: 1200px;
-    }
-
-    #tabs-11 {
-      width: 1200px;
-    }
-
-    #tabs-12 {
-      width: 1200px;
-    }
+    } */
 
     #practice {
       clear: both;
@@ -83,11 +44,8 @@
   </style>
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-
-
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide"
+  data-aos-duration="800" data-aos-delay="0">
 
   <div class="site-wrap">
 
@@ -97,28 +55,37 @@
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
+      <div class="site-mobile-menu-body">
+        <ul class="site-nav-wrap">
+          <li><a href="#vedio" class="nav-link active">課程影片</a></li>
+          <li><a href="#tabs-1" class="nav-link">課程教材</a></li>
+          <li><a href="#practice" class="nav-link">程式練習</a></li>
+          <li><a href="#disqus_thread" class="nav-link">課程討論</a></li>
+        </ul>
+      </div>
     </div>
 
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+    <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 74.425px;">
+      <header class="site-navbar py-4 js-sticky-header site-navbar-target shrink" role="banner"
+        style="width: 571.2px; position: fixed; top: 0px; z-index: inherit;">
 
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
 
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="#vedio" class="nav-link">課程影片</a></li>
-                <li><a href="#tabs-1" class="nav-link">課程教材</a></li>
-                <li><a href="#practice" class="nav-link">程式練習</a></li>
-                <li><a href="#disqus_thread" class="nav-link">課程討論</a></li>
-              </ul>
-            </nav>
-          </div>
+            <div class="mx-auto text-center">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                  <li><a href="#vedio" class="nav-link active">課程影片</a></li>
+                  <li><a href="#tabs-1" class="nav-link">課程教材</a></li>
+                  <li><a href="#practice" class="nav-link">程式練習</a></li>
+                  <li><a href="#disqus_thread" class="nav-link">課程討論</a></li>
+                </ul>
+              </nav>
+            </div>
 
-          <!-- <div class="ml-auto w-25">
+            <!-- <div class="ml-auto w-25">
             <!-- <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
                 <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
@@ -126,15 +93,17 @@
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
           </div> -->
+          </div>
         </div>
-      </div>
 
-    </header>
+      </header>
+    </div>
 
     <div class="intro-section single-cover" id="home-section">
 
-      <div class="slide-1 " style="background-image: url({% static 'images/img6.JPG' %}"
-        ); " data-stellar-background-ratio=" 0.5">
+      <div class="slide-1 "
+        style="background-image: url(&quot;/static/images/img6.JPG&quot;); background-position: 50% 225px;"
+        );="" "="" data-stellar-background-ratio=" 0.5">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
@@ -144,6 +113,8 @@
                   <h1 data-aos="fade-up" data-aos-delay="0">10個常用的Bootstrap元件</h1>
                   <p data-aos="fade-up" data-aos-delay="100">&bullet; 此章節共 1 小時 3 分 5 秒 / 1 份作業 &bullet; </p>
                 </div>
+
+
               </div>
             </div>
 
@@ -155,67 +126,80 @@
     <div class="site-section">
       <div class="container">
         <div class="row">
-          <div class=" mb-5">
+          <div class=" mb-5 w-100">
+
             <div id="987">
-              <div class="mb-5" id="vedio">
+              <div class="mb-5 col-md-12" id="vedio">
 
-                <div>
-                  <h2 class="mb-5">課程影片</h2>
-                  <iframe width="60%" height="500" src="https://www.youtube.com/embed/CvJY2C-U-xY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <div class="col-lg-4 pl-lg-5" id="test">
+                <div class="mb-5 col-md-12">
 
-                    <div class="mb-5 text-left border rounded course-instructor">
-                      <div class="mb-5 ">
-                        <h3 class="text-black">章節內容</h3>
-                        <hr>
 
-                        <details>
-                          <summary>第 0 節 : 課程介紹</summary>
-                          <ol>
-                            <li><a href="/lesson0/">課程與網頁程式介紹</a></li>
-                          </ol>
-                        </details>
 
-                        <details>
-                          <summary>第 1 節 : HTML5網頁設計建構</summary>
-                          <ol>
-                            <li><a href="/lesson1_1/">HTML概要</a></li>
-                            <li><a href="/lesson1_2/">HTML5新增元件與屬性</a></li>
-                            <li><a href="/lesson1_3/">作業區 : HTML 5 practice</a></li>
-                          </ol>
-                        </details>
+                  <div class="row justify-content-between">
 
-                        <details>
-                          <summary>第 2 節 : CSS3標籤與使用方式</summary>
-                          <ol>
-                            <li><a href="/lesson2_1/">CSS概要</a></li>
-                            <li><a href="/lesson2_2/">選擇器與常用屬性</a></li>
-                            <li><a href="/lesson2_3/">盒子模型與基本版面設計</a></li>
-                            <li><a href="/lesson2_4/">CSS3新手法與特效</a></li>
-                            <li><a href="/lesson2_5/">作業區 : CSS 3 practice</a></li>
-                          </ol>
-                        </details>
+                    <div class="col-12 col-md-7">
+                      <h2 class="mb-5">課程影片</h2>
+                      <iframe width="100%" height="500" src="https://www.youtube.com/embed/CvJY2C-U-xY" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                    </div>
 
-                        <details>
-                          <summary>第 3 節 : Bootstrap4前端框架</summary>
-                          <ol>
-                            <li><a href="/lesson3_1/">撰寫Bootstrap網頁</a></li>
-                            <li><a href="/lesson3_2/">Bootstrap網格系統</a></li>
-                            <li><a href="/lesson3_3/">CSS樣式</a></li>
-                            <li><a href="/lesson3_4/">10個常用的Bootstrap元件</a></li>
-                            <li><a href="/lesson3_5/">作業區 : Bootstrap 4 practice</a></li>
-                          </ol>
-                        </details>
+                    <div class="col-lg-4 pl-lg-5 col-md-4" id="test">
 
-                        <details>
-                          <summary>第 4 節 : 部署到Heroku</summary>
-                          <ol>
-                            <li><a href="/lesson4_1/">程式編輯器，ColorLib介紹</a></li>
-                            <li><a href="/lesson4_2/">Heroku建立與安裝</a></li>
-                            <li><a href="/lesson4_3/">部署至Heroku與期末專案</a></li>
-                          </ol>
-                        </details>
+                      <div class="mb-5 text-left border rounded course-instructor">
+                        <div class="mb-5 ">
+                          <h3 class="text-black">章節內容</h3>
+                          <hr>
+
+                          <details>
+                            <summary>第 0 節 : 課程介紹</summary>
+                            <ol>
+                              <li><a href="/lesson0/">課程與網頁程式介紹</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 1 節 : HTML5網頁設計建構</summary>
+                            <ol>
+                              <li><a href="/lesson1_1/">HTML概要</a></li>
+                              <li><a href="/lesson1_2/">HTML5新增元件與屬性</a></li>
+                              <li><a href="/lesson1_3/">作業區 : HTML 5 practice</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 2 節 : CSS3標籤與使用方式</summary>
+                            <ol>
+                              <li><a href="/lesson2_1/">CSS概要</a></li>
+                              <li><a href="/lesson2_2/">選擇器與常用屬性</a></li>
+                              <li><a href="/lesson2_3/">盒子模型與基本版面設計</a></li>
+                              <li><a href="/lesson2_4/">CSS3新手法與特效</a></li>
+                              <li><a href="/lesson2_5/">作業區 : CSS 3 practice</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 3 節 : Bootstrap4前端框架</summary>
+                            <ol>
+                              <li><a href="/lesson3_1/">撰寫Bootstrap網頁</a></li>
+                              <li><a href="/lesson3_2/">Bootstrap網格系統</a></li>
+                              <li><a href="/lesson3_3/">CSS樣式</a></li>
+                              <li><a href="/lesson3_4/">10個常用的Bootstrap元件</a></li>
+                              <li><a href="/lesson3_5/">作業區 : Bootstrap 4 practice</a></li>
+                            </ol>
+                          </details>
+
+                          <details>
+                            <summary>第 4 節 : 部署到Heroku</summary>
+                            <ol>
+                              <li><a href="/lesson4_1/">程式編輯器，ColorLib介紹</a></li>
+                              <li><a href="/lesson4_2/">Heroku建立與安裝</a></li>
+                              <li><a href="/lesson4_3/">部署至Heroku與期末專案</a></li>
+                            </ol>
+                          </details>
+                        </div>
                       </div>
+
                     </div>
 
                   </div>
@@ -228,76 +212,123 @@
 
 
             </div><!-- 987 -->
+
+
             <!-- JQUERY         -->
             <div class="mb-5 ">
               <h3 class="mb-5">課程教材</h3>
-              <div id="tabs">
-                <ul>
-                  <li><a href="#tabs-1">教材投影片</a></li>
-                  <li><a href="#tabs-2">Point</a></li>
-                  <li><a href="#tabs-3">按鈕</a></li>
-                  <li><a href="#tabs-4">按鈕群組</a></li>
-                  <li><a href="#tabs-5">警報效果</a></li>
-                  <li><a href="#tabs-6">下拉式選單</a></li>
-                  <li><a href="#tabs-7">超大螢幕效果</a></li>
-                  <li><a href="#tabs-8">導覽列</a></li>
-                  <li><a href="#tabs-9">分頁導覽</a></li>
-                  <li><a href="#tabs-10">輪播</a></li>
-                  <li><a href="#tabs-11">卡片</a></li>
-                  <li><a href="#tabs-12">摺疊</a></li>
+              <div id="tabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
+                <ul role="tablist"
+                  class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+                  <li role="tab" tabindex="0"
+                    class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                    aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a
+                      href="#tabs-1" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">教材投影片</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-2" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">Point</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-3" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">按鈕</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-4" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">按鈕群組</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-5" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">警報效果</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-6" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">下拉式選單</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-7" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">超大螢幕效果</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-8" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">導覽列</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-9" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">分頁導覽</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-10" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">輪播</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-11" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">卡片</a>
+                  </li>
+                  <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                      href="#tabs-12" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">摺疊</a>
+                  </li>
                 </ul>
-                <div id="tabs-1">
+                <div id="tabs-1" aria-labelledby="ui-id-1" role="tabpanel"
+                  class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="false">
                   <iframe
                     src="https://docs.google.com/presentation/d/e/2PACX-1vSyBj3ryJiW0n_phWTXrtTPZAWOM5TvpYsAtyDMJDFdQbqaRL6oRffS3uwSPLgIXg/embed?start=false&loop=false&delayms=3000"
-                    frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
                     webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-2">
                   <ol>
                     <li>Bootstrap元件在官方文檔中皆有現成程式碼讓開發者去複製及修改，請各位同學務必親自練習10種常用元件之修改。</li>
-                    <li>查閱程式官方文檔無論是網頁前端或後端甚至其他領域之程式學習都需要具備的能力，因為程式語言的規則的更新是非常頻繁的，官方文件則是更新最快最準確的文本教學。</li><hr>
+                    <li>查閱程式官方文檔無論是網頁前端或後端甚至其他領域之程式學習都需要具備的能力，因為程式語言的規則的更新是非常頻繁的，官方文件則是更新最快最準確的文本教學。</li>
+                    <hr>
                   </ol>
                   <ol>
                     <h1><i><b>教學程式碼說明</b></i></h1>
-                    <li><span style="background-color:yellow">按鈕 </span>: 
+                    <li><span style="background-color:yellow">按鈕 </span>:
                       <pre>
 btn-sm小按鈕
 btn-lg大按鈕
 active，設定按鈕為顏色變深被按著的狀態
 disable，設定按鈕顏色變淺無法點案的停用狀態
-</pre></li>
-<li><span style="background-color:yellow">按鈕群組 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">按鈕群組 </span>:
+                      <pre>
 將數個按鈕組合再一起，原則是按鈕都在相同div中並加設btn-group類別和role=”group”屬性，此時按鈕會呈水平排列，
 若要垂直排列則使用btn-group-vertical類別
 大按鈕btn-group-lg
 小按鈕btn-group-sm
 
-</pre></li>
-<li><span style="background-color:yellow">警報效果 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">警報效果 </span>:
+                      <pre>
 警報效果元件用來顯示醒目的區塊來提供重要訊息，在div元素上加上alert和alert-*，等類別
 32~34行有超連結的警報效果
 35~39行建立可關閉的警報效果，35行div元素加上alert-dismissable類別，而37~38行則是建立關閉警報的按鈕
     
-</pre></li>
-<li><span style="background-color:yellow">下拉式選單 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">下拉式選單 </span>:
+                      <pre>
 下拉式選單要先有下拉的按鈕，再加上dropdown-toggle類別和drop-toggle="dropdown"屬性
 下拉式dropdown類別、上拉dropup、向右dropright、向左dropleft
 清單標題dropdown-header
 清單分隔線dropdown-divider
     
-</pre></li>
-<li><span style="background-color:yellow">超大螢幕效果 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">超大螢幕效果 </span>:
+                      <pre>
 jumbotron元件用來江區塊擴展至瀏覽器可視範圍，達到超大螢幕效果
 加入大按鈕及其他設計，凸顯頁面目的
-加上背景圖片
+可選擇style宣告加上背景圖片
     
-</pre></li>
-<li><span style="background-color:yellow">導覽列 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">導覽列 </span>:
+                      <pre>
 導覽列是網頁上十分常見的元件，
 11行navbar-light和bg-light將導覽列和背景設定顏色
 11行navbar-expand-md類別設定響應是切換點為768px fixed-top將導覽列固定在上方
@@ -309,18 +340,20 @@ jumbotron元件用來江區塊擴展至瀏覽器可視範圍，達到超大螢�
 31行導覽列放置表單，form-inline類別設定行內表單，讓輸入欄位和按鈕排成一行
 38行由於將導覽列固定在上方會蓋住下方網頁內容，所以建議在下文加上方留白之樣式，這裡我們留白70px
     
-</pre></li>
-<li><span style="background-color:yellow">分頁導覽</span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">分頁導覽</span>:
+                      <pre>
 分頁導覽也是很常見的功能，使用者可以點及頁數就可以跳轉到不同頁面
 關鍵在於12行ul元素中加入pagination類別，表示該元素用來做分頁導覽元件
 然後在li元素中加上page-item類別和<a>元上加上page-link類別，製作頁數與該頁之超連結
 18行active類別表示啟用頁數，20行diabled表示停用頁數
 另外，分頁之大小尺寸也可以透過設定12行的pagination-lg或pagination-sm類別來設計
     
-</pre></li>
-<li><span style="background-color:yellow">輪播 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">輪播 </span>:
+                      <pre>
 輪播元件包含了 :
 
 1.輪播指示(carousel indicator)，由ol和li元素組成，用來根據圖片的張數在圖片下方顯示細長條狀給使用者點選，範例有三張圖片所以有三個細長條
@@ -339,16 +372,18 @@ jumbotron元件用來江區塊擴展至瀏覽器可視範圍，達到超大螢�
 carousel-control-next類別製作向後切換的輪播控制器，href屬性設定要使用的輪播元件此例為#myCarousel，
 而data-slide="pre"屬性表示向前切換;"next"表示向後切換，span元素才包起前後切換的的圖示
     
-</pre></li>
-<li><span style="background-color:yellow">卡片 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">卡片 </span>:
+                      <pre>
 卡片元件是一個具有彈性與擴充性的內容容器，可以包含頁首(card-header)主體(card-body)及頁尾(card-footer)
 使用card-img-top類別，讓卡片圖片放置在上方
 card-title製作卡片標題及card-text製作卡片文字
 
-</pre></li>
-<li><span style="background-color:yellow">摺疊 </span>: 
-  <pre>
+</pre>
+                    </li>
+                    <li><span style="background-color:yellow">摺疊 </span>:
+                      <pre>
 摺疊元件用來將區塊摺疊起來，例子中按一下卡片頁首就會展開卡片主體，再按一下又會折疊起來，一次只會展開一個卡片主體
 程式碼看起來有點負責但其實是差不多的，所以只要要了解一組程式碼就好
 使用div加上accordion類別製作一組可折疊卡片，此例有三個卡片
@@ -358,138 +393,168 @@ card-header製作頁首，href製作展開的超連結，加上data-toggle='coll
 17行只用collapse類別製作摺疊區塊，cardbody是卡片主體裡面包含內文
 之後再用相同方式，製作第二個與第三個卡片
     
-</pre></li>
+</pre>
+                    </li>
                   </ol>
                 </div>
 
                 <div id="tabs-3">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQVn_lJK3jhobmwtyAPbWtjh6Tyw4tfFSDSjc1IY3JmHp_BQXXqplsL_LnEqLb0H2yYDz-1zuw3DFZg/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true">
-                </iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vQVn_lJK3jhobmwtyAPbWtjh6Tyw4tfFSDSjc1IY3JmHp_BQXXqplsL_LnEqLb0H2yYDz-1zuw3DFZg/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true">
+                  </iframe>
                 </div>
                 <div id="tabs-4">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vTtVjOI23dd4SHoQUT7NZs-xG0-bfL44LJDpERUvwK7_RquSEUZnfVmBD12Re2gt7DB7IRXIsUelx15/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vTtVjOI23dd4SHoQUT7NZs-xG0-bfL44LJDpERUvwK7_RquSEUZnfVmBD12Re2gt7DB7IRXIsUelx15/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-5">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vTFflZUufdULBfaKsuAFy9acq8GZk7kFsxJ694VNIyZyQc1dFUsLZwp8OHLvFdoGkViXF3YCr249GEv/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vTFflZUufdULBfaKsuAFy9acq8GZk7kFsxJ694VNIyZyQc1dFUsLZwp8OHLvFdoGkViXF3YCr249GEv/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-6">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vSG7V-PkV3t3zuEHfvdsFDgkIiA5pbGJJ4GvdMn47K_gOr10xIgYiLwvIxmcYsa3Ma7tlA3q90_zLJz/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vSG7V-PkV3t3zuEHfvdsFDgkIiA5pbGJJ4GvdMn47K_gOr10xIgYiLwvIxmcYsa3Ma7tlA3q90_zLJz/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-7">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vR5tirTbi2EVipv5E9TjmmtcW1_QZJFKYcdQn6rem30EKQwXeUiWSQfL-p_JHjAAZBGg3Yj2xgY0ZOz/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vR5tirTbi2EVipv5E9TjmmtcW1_QZJFKYcdQn6rem30EKQwXeUiWSQfL-p_JHjAAZBGg3Yj2xgY0ZOz/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-8">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQzU-2RJKEH2723NOCzuilJc4XDzpvdQ_eoT2Sm9vW3tmmiRTX9EKZMv3x6i0k_8RGag3TQ71oIRaRC/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vQzU-2RJKEH2723NOCzuilJc4XDzpvdQ_eoT2Sm9vW3tmmiRTX9EKZMv3x6i0k_8RGag3TQ71oIRaRC/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-9">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vT_jtYrrpp3HFM2yqyOP5O3lrf8Hq2eE5Kt9ce8hniTajHBQ7aXcien3Rvpj-jYKiUlWuhnZa9QFwYP/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vT_jtYrrpp3HFM2yqyOP5O3lrf8Hq2eE5Kt9ce8hniTajHBQ7aXcien3Rvpj-jYKiUlWuhnZa9QFwYP/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-10">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vReFYkjLI0erWm1m77F5S_RRsvxigqh_wlf5GcyPcklbAdJnq1eTJZU3WlbIzCyKyaeFVWf7aAmjpBc/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vReFYkjLI0erWm1m77F5S_RRsvxigqh_wlf5GcyPcklbAdJnq1eTJZU3WlbIzCyKyaeFVWf7aAmjpBc/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-11">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vTtPBmzvq0gsVCB9rjRRAWQlT8j5t9RB5plLlL-prxJRgdKMo6eazvtz0ZRq_uNE_6UIr2KEmy7UqVg/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vTtPBmzvq0gsVCB9rjRRAWQlT8j5t9RB5plLlL-prxJRgdKMo6eazvtz0ZRq_uNE_6UIr2KEmy7UqVg/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
                 <div id="tabs-12">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vTnObJSnV0aI1JLiFnO_3K01kob0KKPEOWJ_PizBV50smo0ueRNFRLn0--LJ-ZSmnXx7R7MYCCDSndP/pub?embedded=true" frameborder="0" width="1070" height="749" allowfullscreen="true" mozallowfullscreen="true"
-                  webkitallowfullscreen="true"></iframe>
+                  <iframe
+                    src="https://docs.google.com/document/d/e/2PACX-1vTnObJSnV0aI1JLiFnO_3K01kob0KKPEOWJ_PizBV50smo0ueRNFRLn0--LJ-ZSmnXx7R7MYCCDSndP/pub?embedded=true"
+                    frameborder="0" width="100%" height="749" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
                 </div>
-              </div>
-
-
-
-              <div class="mb-5 ">
-                <h2 class="mb-5" id="practice">程式練習</h2>
-                <iframe height="1000px" width="100%" src="https://repl.it/@jayceli/FatalAgileTraining?lite=true"
-                  scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
-                  sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-              </div>
-
-
-              <div class="pt-5">
-                <h3 class="mb-5">課程討論</h3>
-                <hr>
-                <div id="disqus_thread"></div>
-                <script>
-
-                  /**
-                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                  /*
-                  var disqus_config = function () {
-                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                  };
-                  */
-                  (function () { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://1-1-3.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                  })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                    powered
-                    by Disqus.</a></noscript>
-
-
 
               </div>
+            </div>
+          
+
+          <div class="container">
+            <div class="mb-5">
+              <h2 class="mb-5" id="practice">程式練習</h2>
+              <iframe height="1000px" width="100%" src="https://repl.it/@jayceli/FatalAgileTraining?lite=true"
+                scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            </div>
+          </div>
+
+          <div class=" container pt-5">
+
+            <div class="pt-5 ">
+              <h3 class="mb-5">課程討論</h3>
+              <hr>
+              <div id="disqus_thread"><iframe id="dsq-app5667" name="dsq-app5667" allowtransparency="true"
+                  frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%"
+                  src="https://disqus.com/embed/comments/?base=default&amp;f=1-1-3&amp;t_u=https%3A%2F%2Fbracesbrother.herokuapp.com%2Flesson0%2F&amp;t_d=HTML5%2BCSS3%2BBootstrap4%20%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%20A-Z&amp;t_t=HTML5%2BCSS3%2BBootstrap4%20%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%20A-Z&amp;s_o=desc#version=9e072c150154e3eaaf066d104c0fab0e"
+                  style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 556px !important;"
+                  horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+              <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://1-1-3.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                  powered
+                  by Disqus.</a></noscript>
 
 
 
             </div>
+
+
+
           </div>
         </div>
       </div>
+    </div>
 
 
 
-      <footer class="footer-section bg-light text-center">
-        <div class="container">
-          <p>Copyright ©2020 All rights reserved | NTUST_SIS</p>
-        </div>
-      </footer>
+    <footer class="footer-section bg-light text-center">
+      <div class="container">
+        <p>Copyright ©2020 All rights reserved | NTUST_SIS</p>
+      </div>
+    </footer>
 
 
 
-    </div> <!-- .site-wrap -->
+  </div> <!-- .site-wrap -->
 
-    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
-    <script src="{% static "js/jquery-migrate-3.0.1.min.js"%}"></script>
-    <script src="{% static "js/jquery-ui.js"%}"></script>
-    <script src="{% static "js/popper.min.js"%}"></script>
-    <script src="{% static "js/bootstrap.min.js"%}"></script>
-    <script src="{% static "js/owl.carousel.min.js"%}"></script>
-    <script src="{% static "js/jquery.stellar.min.js"%}"></script>
-    <script src="{% static "js/jquery.countdown.min.js"%}"></script>
-    <script src="{% static "js/bootstrap-datepicker.min.js"%}"></script>
-    <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
-    <script src="{% static "js/aos.js"%}"></script>
-    <script src="{% static "js/jquery.fancybox.min.js"%}"></script>
-    <script src="{% static "js/jquery.sticky.js"%}"></script>
-    <script src="{% static "js/main.js"%}"></script>
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/jquery-ui.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/jquery.countdown.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.min.js"></script>
+  <script src="/static/js/jquery.easing.1.3.js"></script>
+  <script src="/static/js/aos.js"></script>
+  <script src="/static/js/jquery.fancybox.min.js"></script>
+  <script src="/static/js/jquery.sticky.js"></script>
+  <script src="/static/js/main.js"></script>
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-      $(function () {
-        $("#tabs").tabs();
-      });
-    </script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
 
 
 
+  </div><iframe style="display: none;"></iframe>
 </body>
 
 </html>
