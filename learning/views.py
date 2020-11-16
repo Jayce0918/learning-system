@@ -6,6 +6,8 @@ from .form import RegisterForm, EditForm
 from django.contrib.auth.forms import SetPasswordForm
 # from learning.models import student
 # from learning.form import PostForm
+from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -16,46 +18,67 @@ def register(request):
     return render(request,'register.html')
 def User_login(request):
     return render(request,'login.html')
+@login_required(login_url='/login/', redirect_field_name='next')
 def personal(request):
     return render(request,'personal.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def User_logout(request):
     return render(request,'home.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def coursestart(request):
     return render(request,'coursestart.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def class1(request):
     return render(request,'class1.html') 
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson0(request):
     return render(request,'lesson0.html')  
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_1(request):
     return render(request,'lesson1_1.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_2(request):
     return render(request,'lesson1_2.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_3(request):
     return render(request,'lesson1_3.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_4(request):
     return render(request,'lesson2_1.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_5(request):
     return render(request,'lesson2_2.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_6(request):
     return render(request,'lesson2_3.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_7(request):
-    return render(request,'lesson2_4.html')  
+    return render(request,'lesson2_4.html') 
+@login_required(login_url='/login/', redirect_field_name='next')  
 def lesson_8(request):
     return render(request,'lesson2_5.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_9(request):
     return render(request,'lesson3_1.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_10(request):
     return render(request,'lesson3_2.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_11(request):
     return render(request,'lesson3_3.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_12(request):
     return render(request,'lesson3_4.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_13(request):
     return render(request,'lesson4_1.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_14(request):
     return render(request,'lesson4_2.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_15(request):
     return render(request,'lesson4_3.html')
+@login_required(login_url='/login/', redirect_field_name='next') 
 def lesson_16(request):
     return render(request,'lesson3_5.html')
    
