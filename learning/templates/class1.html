@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-{%load static%}
+
 <html lang="en">
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>HTML5+CSS3+Bootstrap4 前端網頁設計 A-Z</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HTML5+CSS3+Bootstrap4 前端網頁設計 A-Z</title>
 
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="{% static "fonts/icomoon/style.css" %}">
-  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
-  <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}">
-  <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
-  <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
-  <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
-  <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}">
-  <link rel="stylesheet" href="{% static "css/bootstrap-datepicker.css" %}">
-  <link rel="stylesheet" href="{% static "fonts/flaticon/font/flaticon.css" %}">
-  <link rel="stylesheet" href="{% static "css/aos.css" %}">
-  <link rel="stylesheet" href="{% static "css/style.css" %}">
-  <style>
-    #teacher {
-      margin-top: 10%;
-    }
-    #message{
-      margin-top: 30%;
-    }
-  </style>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/css/aos.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        #teacher {
+            margin-top: 10%;
+        }
+        
+        #message {
+            margin-top: 30%;
+        }
+    </style>
 
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <div class="site-wrap">
+    <div class="site-wrap">
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <div class="site-logo mr-auto w-25"><a href="/coursestart/">課程總覽</a></div>
 
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="#home-section" class="nav-link">課程內容</a></li>
-                <li><a href="#message" class="nav-link">課程評論</a></li>
-              </ul>
-            </nav>
-          </div>
+                    <div class="mx-auto text-center">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                                <li><a href="#home-section" class="nav-link">課程內容</a></li>
+                                <li><a href="#message" class="nav-link">課程評論</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
-          <!-- <div class="ml-auto w-25">
+                    <!-- <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
                 <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
@@ -70,20 +71,20 @@
         </div>
       </div> -->
 
-    </header>
+        </header>
 
-    <div class="intro-section single-cover" id="home-section">
+        <div class="intro-section single-cover" id="home-section">
 
-      <div class="slide-1 " style="background-image: url({% static 'images/img6.jpg' %}" );"
-        data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12">
-              <div class="row justify-content-center align-items-center text-center">
-                <div class="col-lg-6">
-                  <h1 data-aos="fade-up" data-aos-delay="0">HTML5+CSS3+Bootstrap4 </h1>
-                  <h1 data-aos="fade-up" data-aos-delay="0">前端網頁設計 A-Z</h1>
-                  <p data-aos="fade-up" data-aos-delay="100">&bullet; 此章節共 4 個小時 / 4 份作業 &bullet; </p>
+            <div class="slide-1 " style="background-image: url(/static/images/img6.jpg" ); "
+        data-stellar-background-ratio="0.5 ">
+        <div class="container ">
+          <div class="row align-items-center ">
+            <div class="col-12 ">
+              <div class="row justify-content-center align-items-center text-center ">
+                <div class="col-lg-6 ">
+                  <h1 data-aos="fade-up " data-aos-delay="0 ">HTML5+CSS3+Bootstrap4 </h1>
+                  <h1 data-aos="fade-up " data-aos-delay="0 ">前端網頁設計 A-Z</h1>
+                  <p data-aos="fade-up " data-aos-delay="100 ">&bullet; 此章節共 4 個小時 / 4 份作業 &bullet; </p>
                 </div>
 
 
@@ -95,15 +96,15 @@
       </div>
     </div>
 
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mb-5">
+    <div class="site-section ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg-8 mb-5 ">
 
-            <div class="mb-5">
-              <h3 class="text-black">課程內容</h3>
+            <div class="mb-5 ">
+              <h3 class="text-black ">課程內容</h3>
               <hr>
-              <h6 class="text-black">您將會學到:</h6>
+              <h6 class="text-black ">您將會學到:</h6>
               <details >
                 <summary > HTML5網頁設計建構</summary>               
                 <ol>                  
@@ -142,29 +143,32 @@
             </div>
 
             <div>
-              <h3 class="text-black">要求</h3>
+              <h3 class="text-black ">要求</h3>
               <hr>
-              <li>請先填寫<a href="https://forms.gle/TddAooWopyZxVdtZ8" target="blank"><b>認知風格問卷</b></a></li>
+              <li>請先填寫<a href="https://forms.gle/TddAooWopyZxVdtZ8 " target="blank "><b>認知風格問卷</b></a></li>
               <li>不需要嚴謹的程式背景，願意實作練習</li>
               <li>有電腦操作基礎</li>
               <li>任何想要製成一個網站的主題</li>
               <li>具備快樂學習網頁設計的心情</li>
+              <li>完成課程後，請填寫<a href="https://forms.gle/LSc5NFMpc67oEhsC6 " target="blank "><b>系統滿意度問卷</b></a></li>
+              
             </div>
 
-            <div id="teacher">
-              <h3 class="text-black">講師</h3>
+            <div id="teacher ">
+              <br>
+              <h3 class="text-black ">講師</h3>
               <hr>
-              <ul class="comment-list">
-                <li class="comment">
+              <ul class="comment-list ">
+                <li class="comment ">
 
-                  <div class="vcard bio">
-                    <img src="{% static "images/LeeHead.jpg"%}" >
+                  <div class="vcard bio ">
+                    <img src="/static/images/LeeHead.jpg " >
                   </div>
 
                   <div>
                     <h3>授課講師:李冠霆</h3>
                     <div>
-                      <p><i class="fa fa-caret-square-o-right"></i> 開設課程數 : 1</p>
+                      <p><i class="fa fa-caret-square-o-right "></i> 開設課程數 : 1</p>
                       <p>目前就讀台科大資管碩士，擅長前端開發</p>
                       <p>期望用簡單豐富的教學，降低程式學習門檻，激發其深入學習之興趣</p>
                       <p>如果有建議改進之處，歡迎來信 : leekuatean@gmail.com</p>
@@ -178,14 +182,14 @@
             </div>
 
             <!-- <div>            
-              <ul class="comment-list">
-                <li class="comment">
-                  <div id="teacher">
-                  <div class="vcard bio">
-                    <img src="{% static "images/leehead.jpg"%}" alt="Image placeholder">
+              <ul class="comment-list ">
+                <li class="comment ">
+                  <div id="teacher ">
+                  <div class="vcard bio ">
+                    <img src="/static/images/leehead.jpg " alt="Image placeholder ">
                   </div>
                                     
-                <div class="text-black">  
+                <div class="text-black ">  
                     <h3>授課講師:李冠霆</h3>
                     <div>
                     <p>目前就讀台科大資管碩士，擅長前端開發</p>                  
@@ -198,10 +202,10 @@
 
 
             <!-- 留言板開始 -->
-            <div id="message">
-              <h3 class="text-black">課程評論</h3>
+            <div id="message ">
+              <h3 class="text-black ">課程評論</h3>
               <hr>
-              <div id="disqus_thread"></div>
+              <div id="disqus_thread "></div>
               <div>
                 <script>
 
@@ -221,7 +225,7 @@
                     (d.head || d.body).appendChild(s);
                   })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript ">comments
                     powered by Disqus.</a></noscript>
               </div>
 
@@ -229,16 +233,16 @@
           </div>
           <!-- 留言結束 -->
 
-          <div class="col-lg-4 pl-lg-5">
+          <div class="col-lg-4 pl-lg-5 ">
 
-            <div class="mb-5 text-center border rounded course-instructor">
-              <h3 class="mb-5 text-black text-uppercase h6 border-bottom pb-3">課程預覽</h3>
-              <div class="mb-4 text-center">
-                <h3><iframe width="100%" height="315" src="https://www.youtube.com/embed/cnCh8096ytA" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            <div class="mb-5 text-center border rounded course-instructor ">
+              <h3 class="mb-5 text-black text-uppercase h6 border-bottom pb-3 ">課程預覽</h3>
+              <div class="mb-4 text-center ">
+                <h3><iframe width="100% " height="315 " src="https://www.youtube.com/embed/cnCh8096ytA " frameborder="0 "
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture "
                     allowfullscreen></iframe></h3>
-                <p class="mt-4"><a href="/lesson0/" class="btn btn-primary">進入課程</a></p>
-                <div class="text-left">此課程包含
+                <p class="mt-4 "><a href="/lesson0/ " class="btn btn-primary ">進入課程</a></p>
+                <div class="text-left ">此課程包含
                   <li>4 小時的隨選影片</li>
                   <li>完整終身學習權力</li>
                   <li>透過行動裝置與電腦存取</li>
@@ -252,160 +256,160 @@
       </div>
     </div>
 
-    <!-- <div class="site-section courses-title bg-dark" id="courses-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
-            <h2 class="section-title">More Courses</h2>
+    <!-- <div class="site-section courses-title bg-dark " id="courses-section ">
+      <div class="container ">
+        <div class="row mb-5 justify-content-center ">
+          <div class="col-lg-7 text-center " data-aos="fade-up " data-aos-delay=" ">
+            <h2 class="section-title ">More Courses</h2>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section courses-entry-wrap" data-aos="fade" data-aos-delay="100">
-      <div class="container">
-        <div class="row">
+    <div class="site-section courses-entry-wrap " data-aos="fade " data-aos-delay="100 ">
+      <div class="container ">
+        <div class="row ">
 
-          <div class="owl-carousel col-12 nonloop-block-14">
+          <div class="owl-carousel col-12 nonloop-block-14 ">
 
-            <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="{% static "images/img_1.jpg"%}" alt="Image"
-                    class="img-fluid"></a>
+            <div class="course bg-white h-100 align-self-stretch ">
+              <figure class="m-0 ">
+                <a href="course-single.html "><img src="/static/images/img_1.jpg " alt="Image "
+                    class="img-fluid "></a>
               </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$20</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Study Law of Physics</a></h3>
+              <div class="course-inner-text py-4 px-4 ">
+                <span class="course-price ">$20</span>
+                <div class="meta "><span class="icon-clock-o "></span>4 Lessons / 12 week</div>
+                <h3><a href="# ">Study Law of Physics</a></h3>
                 <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
               </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+              <div class="d-flex border-top stats ">
+                <div class="py-3 px-4 "><span class="icon-users "></span> 2,193 students</div>
+                <div class="py-3 px-4 w-25 ml-auto border-left "><span class="icon-chat "></span> 2</div>
               </div>
             </div>
 
-            <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="{% static "images/img_2.jpg"%}" alt="Image"
-                    class="img-fluid"></a>
+            <div class="course bg-white h-100 align-self-stretch ">
+              <figure class="m-0 ">
+                <a href="course-single.html "><img src="/static/images/img_2.jpg " alt="Image "
+                    class="img-fluid "></a>
               </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$99</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Logo Design Course</a></h3>
+              <div class="course-inner-text py-4 px-4 ">
+                <span class="course-price ">$99</span>
+                <div class="meta "><span class="icon-clock-o "></span>4 Lessons / 12 week</div>
+                <h3><a href="# ">Logo Design Course</a></h3>
                 <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
               </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+              <div class="d-flex border-top stats ">
+                <div class="py-3 px-4 "><span class="icon-users "></span> 2,193 students</div>
+                <div class="py-3 px-4 w-25 ml-auto border-left "><span class="icon-chat "></span> 2</div>
               </div>
             </div>
 
-            <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="{% static "images/img_3.jpg"%}" alt="Image class="
-                    img-fluid"></a>
-              </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$99</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">JS Programming Language</a></h3>
-                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-              </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
+            <div class="course bg-white h-100 align-self-stretch ">
+              <figure class="m-0 ">
+                <a href="course-single.html "><img src="/static/images/img_3.jpg " alt="Image class="
+                    img-fluid">
+                </a>
+                </figure>
+                <div class="course-inner-text py-4 px-4">
+                    <span class="course-price">$99</span>
+                    <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
+                    <h3><a href="#">JS Programming Language</a></h3>
+                    <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                </div>
+                <div class="d-flex border-top stats">
+                    <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                    <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+                </div>
             </div>
 
 
 
             <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="{% static "images/img_4.jpg"%}" alt="Image"
-                    class="img-fluid"></a>
-              </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$20</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Study Law of Physics</a></h3>
-                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-              </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
+                <figure class="m-0">
+                    <a href="course-single.html"><img src="/static/images/img_4.jpg" alt="Image" class="img-fluid"></a>
+                </figure>
+                <div class="course-inner-text py-4 px-4">
+                    <span class="course-price">$20</span>
+                    <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
+                    <h3><a href="#">Study Law of Physics</a></h3>
+                    <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                </div>
+                <div class="d-flex border-top stats">
+                    <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                    <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+                </div>
             </div>
 
             <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="{% static "images/img_5.jpg"%}" alt="Image"
-                    class="img-fluid"></a>
-              </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$99</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Logo Design Course</a></h3>
-                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-              </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
+                <figure class="m-0">
+                    <a href="course-single.html"><img src="/static/images/img_5.jpg" alt="Image" class="img-fluid"></a>
+                </figure>
+                <div class="course-inner-text py-4 px-4">
+                    <span class="course-price">$99</span>
+                    <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
+                    <h3><a href="#">Logo Design Course</a></h3>
+                    <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                </div>
+                <div class="d-flex border-top stats">
+                    <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                    <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+                </div>
             </div>
 
             <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="{%static "images/img_6.jpg"%}" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$99</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">JS Programming Language</a></h3>
-                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-              </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
+                <figure class="m-0">
+                    <a href="course-single.html"><img src="/static/images/img_6.jpg" alt="Image" class="img-fluid"></a>
+                </figure>
+                <div class="course-inner-text py-4 px-4">
+                    <span class="course-price">$99</span>
+                    <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
+                    <h3><a href="#">JS Programming Language</a></h3>
+                    <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
+                </div>
+                <div class="d-flex border-top stats">
+                    <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                    <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+                </div>
             </div>
 
-          </div>
+        </div>
 
 
 
         </div>
         <div class="row justify-content-center">
-          <div class="col-7 text-center">
-            <button class="customPrevBtn btn btn-primary m-1">Prev</button>
-            <button class="customNextBtn btn btn-primary m-1">Next</button>
-          </div>
+            <div class="col-7 text-center">
+                <button class="customPrevBtn btn btn-primary m-1">Prev</button>
+                <button class="customNextBtn btn btn-primary m-1">Next</button>
+            </div>
         </div>
-      </div>
+        </div>
     </div> -->
 
     <footer class="footer-section bg-light text-center">
-      <div class="container">
-        <p>Copyright ©2020 All rights reserved | 國立臺灣科技大學資管系策略資訊系統實驗室</p>
-      </div>
+        <div class="container">
+            <p>Copyright ©2020 All rights reserved | 國立臺灣科技大學資管系策略資訊系統實驗室</p>
+        </div>
     </footer>
-  </div> <!-- .site-wrap -->
+    </div>
+    <!-- .site-wrap -->
 
-  <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
-  <script src="{% static "js/jquery-migrate-3.0.1.min.js"%}"></script>
-  <script src="{% static "js/jquery-ui.js"%}"></script>
-  <script src="{% static "js/popper.min.js"%}"></script>
-  <script src="{% static "js/bootstrap.min.js"%}"></script>
-  <script src="{% static "js/owl.carousel.min.js"%}"></script>
-  <script src="{% static "js/jquery.stellar.min.js"%}"></script>
-  <script src="{% static "js/jquery.countdown.min.js"%}"></script>
-  <script src="{% static "js/bootstrap-datepicker.min.js"%}"></script>
-  <script src="{% static "js/jquery.easing.1.3.js"%}"></script>
-  <script src="{% static "js/aos.js"%}"></script>
-  <script src="{% static "js/jquery.fancybox.min.js"%}"></script>
-  <script src="{% static "js/jquery.sticky.js"%}"></script>
-  <script src="{% static "js/main.js"%}"></script>
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/jquery.countdown.min.js"></script>
+    <script src="/static/js/bootstrap-datepicker.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/jquery.fancybox.min.js"></script>
+    <script src="/static/js/jquery.sticky.js"></script>
+    <script src="/static/js/main.js"></script>
 
 
 </body>
